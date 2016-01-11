@@ -8,6 +8,16 @@ Created on Tue Dec 29 11:41:56 2015
 import numpy as np
 from math import radians, sin, cos, sqrt, asin
 
+def createCoordsArray(listOflocations):
+    iterLength = len(listOflocations)
+    listOfCoords = np.zeros((iterLength, 2))    
+    
+    for i in range(iterLength):
+        listOfCoords[i][0] = listOflocations[i][1][0]
+        listOfCoords[i][1] = listOflocations[i][1][1]
+    
+    return listOfCoords
+
 def findCentroid(listOfCoords):
     return np.mean(listOfCoords, axis = 0)
     
@@ -30,3 +40,10 @@ def haversineDistance(coord1, coord2):
     c = 2 * asin(sqrt(a))
     
     return R * c * 0.6214
+    
+#used a prechoosen centroid point 
+#b/c detroit is so spread out, centroid gave wierd results
+#use findCentroid() if using in a dense area
+def trimPoints(fullList):
+    newCenter = np.array((42.432116, -83.115157))
+    return [x for x in fullList if haversineDistance(x[1], newCenter) < 10.0]
