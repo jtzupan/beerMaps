@@ -9,6 +9,8 @@ import numpy as np
 from math import radians, sin, cos, sqrt, asin
 
 def createCoordsArray(listOflocations):
+    '''
+    '''
     iterLength = len(listOflocations)
     listOfCoords = np.zeros((iterLength, 2))    
     
@@ -19,10 +21,14 @@ def createCoordsArray(listOflocations):
     return listOfCoords
 
 def findCentroid(listOfCoords):
+    '''
+    '''
     return np.mean(listOfCoords, axis = 0)
     
     
 def haversineDistance(coord1, coord2):
+    '''
+    '''
     lat1 = coord1[0]
     lon1 = coord1[1]
     lat2 = coord2[0]
@@ -41,9 +47,30 @@ def haversineDistance(coord1, coord2):
     
     return R * c * 0.6214
     
+def findOneMile(coord1):
+    '''finds the GPS distance for 1 mile North-South and 1 mile East-West
+    
+    '''
+    #first coords are north south
+    adjustedNSCoord = (coord1[0] + 1, coord1[1])
+    NS_mile = 1 / haversineDistance(coord1, adjustedNSCoord)
+
+    #second coords are east/west dist
+    adjustedEWCoord = (coord1[0], coord1[1] + 1)
+    EW_mile = 1 / haversineDistance(coord1, adjustedEWCoord)
+    
+    return NS_mile, EW_mile
+    
 #used a prechoosen centroid point 
 #b/c detroit is so spread out, centroid gave wierd results
 #use findCentroid() if using in a dense area
-def trimPoints(fullList):
-    newCenter = np.array((42.432116, -83.115157))
-    return [x for x in fullList if haversineDistance(x[1], newCenter) < 10.0]
+def trimPoints(fullList, newCenter):
+    #newCenter for testing boston
+    #newCenter = np.array((42.3653694,-71.0981929))
+    
+   # newCenter = np.array((42.432116, -83.115157))
+    return [x for x in fullList if haversineDistance(np.array((x[1], x[2])), newCenter) < 10.0]
+    
+    
+    
+    

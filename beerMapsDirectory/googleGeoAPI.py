@@ -5,25 +5,29 @@ Created on Mon Dec 28 14:01:42 2015
 @author: tzupan
 """
 
-#import sys
-#import csv
 import urllib2
 import xml.etree.ElementTree as et
-#csv.field_size_limit(sys.maxsize)
 
 
-def googleAPI(informationTuple, APIType):
+def googleAPI(informationTuple, state):
     '''
-    fileType allows you to return JSON or XML
+    this function uses the Google Geo API to append the GPS coordinates to 
+    the address.
+    informationTuple (): the address 
+    state (str): the state of the address
+    
+    Returns:
+    
     '''
 #    urlBase = 'https://maps.googleapis.com/maps/api/geocode/json?address='
     urlBase = 'https://maps.googleapis.com/maps/api/geocode/xml?address='
     APIKey =  'AIzaSyBsNtXRijhCY6bap_U94KfuwGG15JrcApw'
     
-    address = str(informationTuple[2])
+    #address = str(informationTuple[2])
+    address = informationTuple
     
     address = address.replace(' ', '+')
-    address += ',+MI&key='
+    address += ',+'+state+'&key='
     
     finalURL = urlBase + address + APIKey
     #print finalURL
@@ -43,4 +47,4 @@ def googleAPI(informationTuple, APIType):
         latitude = 'no info'
         longitude = 'no info'
         
-    return (informationTuple, (float(latitude), float(longitude)))
+    return informationTuple, (float(latitude), float(longitude))
