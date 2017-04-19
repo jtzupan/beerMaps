@@ -1,13 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
-
-This is a temporary script file.
+Takes URL of rate beer location and writes info about bar to the db
 """
 
 import requests
 import sqlite3
-from sqlite3 import OperationalError
 from bs4 import BeautifulSoup
 
 
