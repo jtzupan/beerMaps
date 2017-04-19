@@ -5,7 +5,7 @@ Spyder Editor
 This is a temporary script file.
 """
 
-import urllib2
+import requests
 import sqlite3
 from sqlite3 import OperationalError
 from bs4 import BeautifulSoup
@@ -20,10 +20,9 @@ def getHTML(url):
         a beautiful soup object to be parsed
     '''
         
-    response = urllib2.urlopen(url)
-    html = response.read()
-    response.close()
-    soup = BeautifulSoup(html)
+    with requests.Session() as s:
+        html = s.get(url)
+    soup = BeautifulSoup(html.text, 'lxml')
     return soup
     
     
