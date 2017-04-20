@@ -5,11 +5,11 @@ Created on Mon Dec 28 14:01:42 2015
 @author: tzupan
 """
 
-import urllib2
+import requests
 import xml.etree.ElementTree as et
 
 
-def googleAPI(informationTuple, state):
+def googleAPI(addressTuple, state):
     '''
     this function uses the Google Geo API to append the GPS coordinates to 
     the address.
@@ -19,25 +19,25 @@ def googleAPI(informationTuple, state):
     Returns:
     
     '''
-#    urlBase = 'https://maps.googleapis.com/maps/api/geocode/json?address='
+    
     urlBase = 'https://maps.googleapis.com/maps/api/geocode/xml?address='
     APIKey =  'AIzaSyBsNtXRijhCY6bap_U94KfuwGG15JrcApw'
     
-    #address = str(informationTuple[2])
-    address = informationTuple
+    address = addressTuple
     
     address = address.replace(' ', '+')
     address += ',+'+state+'&key='
     
     finalURL = urlBase + address + APIKey
-    #print finalURL
     
     try:
-        tree = et.parse(urllib2.urlopen(finalURL)) 
-        #print tree
+        with requests.Session() as s:
+            html = s.get(finalURL)
+        tree = et.fromstring(html.text) 
+
     except: 
-        #fw.writerow([line])
         pass
+ 
     try:
         for e in tree.findall('./result/geometry/location/lat'):
             latitude = e.text
@@ -47,4 +47,4 @@ def googleAPI(informationTuple, state):
         latitude = 'no info'
         longitude = 'no info'
         
-    return informationTuple, (float(latitude), float(longitude))
+    return addressTuple, (float(latitude), float(longitude))

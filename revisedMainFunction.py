@@ -6,14 +6,14 @@ Created on Wed Mar  9 21:52:50 2016
 """
 
 import googleGeoAPI
-import geoCodingBeer_withDB
+import web_scrape_bar_data
 import GPSCoords
 import revisedScoringFunction
 import sqlite3
 import scipy.stats as stats
 import csv
 reload(googleGeoAPI)
-reload(geoCodingBeer_withDB)
+reload(web_scrape_bar_data)
 reload(GPSCoords)
 reload(revisedScoringFunction)
 
@@ -25,9 +25,9 @@ def buildMainList(targetURL, state, tableName):
     '''
 #    #gets a BeautifulSoup formatted string
 #    targetURL = 'http://www.ratebeer.com/places/regions/detroit-warren-livonia/2160/22/'
-    url = geoCodingBeer_withDB.getHTML(targetURL)
+    url = web_scrape_bar_data.getHTML(targetURL)
     #parses the formatted string and puts the info into a database
-    geoCodingBeer_withDB.getDataSet(url, tableName)
+    web_scrape_bar_data.getDataSet(url, tableName)
 
     conn = sqlite3.connect('beerGeoData.sqlite')
     cur = conn.cursor()
