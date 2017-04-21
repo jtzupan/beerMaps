@@ -7,9 +7,10 @@ Created on Mon Dec 28 14:01:42 2015
 
 import requests
 import xml.etree.ElementTree as et
+from collections import namedtuple
 
 
-def googleAPI(addressTuple, state):
+def googleAPI(address, state):
     '''
     this function uses the Google Geo API to append the GPS coordinates to 
     the address.
@@ -20,11 +21,11 @@ def googleAPI(addressTuple, state):
     
     '''
     
+    bar_coords = namedtuple('BarCoords', 'bar_address latitude longitude')
+    
     urlBase = 'https://maps.googleapis.com/maps/api/geocode/xml?address='
     APIKey =  'AIzaSyBsNtXRijhCY6bap_U94KfuwGG15JrcApw'
-    
-    address = addressTuple
-    
+
     address = address.replace(' ', '+')
     address += ',+'+state+'&key='
     
@@ -46,5 +47,6 @@ def googleAPI(addressTuple, state):
     except:
         latitude = 'no info'
         longitude = 'no info'
-        
-    return addressTuple, (float(latitude), float(longitude))
+    
+    bar_info = bar_coords(address, latitude, longitude)
+    return bar_info

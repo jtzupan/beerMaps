@@ -5,13 +5,16 @@ Created on Wed Mar  9 21:52:50 2016
 @author: johnzupan
 """
 
-import googleGeoAPI
 import web_scrape_bar_data
+import googleGeoAPI
 import GPSCoords
 import revisedScoringFunction
 import sqlite3
 import scipy.stats as stats
 import csv
+from tqdm import tqdm
+
+
 reload(googleGeoAPI)
 reload(web_scrape_bar_data)
 reload(GPSCoords)
@@ -25,6 +28,8 @@ def buildMainList(targetURL, state, tableName):
     '''
 #    #gets a BeautifulSoup formatted string
 #    targetURL = 'http://www.ratebeer.com/places/regions/detroit-warren-livonia/2160/22/'
+    
+    
     url = web_scrape_bar_data.getHTML(targetURL)
     #parses the formatted string and puts the info into a database
     web_scrape_bar_data.getDataSet(url, tableName)
@@ -33,53 +38,53 @@ def buildMainList(targetURL, state, tableName):
     cur = conn.cursor()
     cur.execute('''SELECT ID, address FROM {}'''.format(tableName))
     listOfLocations = cur.fetchall()
-    for i in listOfLocations:
-        ID = i[0]
-        print ID, i[1] 
+    for address in tqdm(listOfLocations):
+        ID = address[0]
+        print ID, address[1] 
         
         #if record already exists in table with updated GPS coordinates
         # skip record.  Saves calls to Google API
         cur.execute('''SELECT latitude, longitude FROM {} 
                             WHERE id = (?)'''.format(tableName),(ID,))
         
-        latitudeCheck = cur.fetchone()[0]                
-        if latitudeCheck != 0.0:
+        recordCheck = cur.fetchone()[0]                
+        if recordCheck != 0.0:
             print 'Record already exists in table'
             continue
+        
+        bar_address = address[1]
 
-        bar, latlong = googleGeoAPI.googleAPI(i[1], state)
-        latitude = latlong[0]
-        longitude = latlong[1]
+        bar_info = googleGeoAPI.googleAPI(bar_address, state)
+
         cur.execute('''UPDATE {} SET latitude = ?,
                         longitude = ?
-                        WHERE ID = ?'''.format(tableName), (latitude, longitude, ID))
+                        WHERE ID = ?'''.format(tableName), (bar_info.latitude, bar_info.longitude, ID))
 
         conn.commit()
-        
-    
+    return 'finished'
     #limits the results to only bars within set number of miles from central location
-    cur.execute('''SELECT averageRating, latitude, longitude, name, address FROM {}'''.format(tableName))
-    coordsList = cur.fetchall()    
-    
-    centroidList = [(x[1], x[2]) for x in coordsList]
-    centroid = GPSCoords.findCentroid(centroidList)
-    
-    #ENTER CUSTOM CENTROID HERE IF THE DATA IS DISPERSED ENOUGH
-    #THAT YOU ARE NOT GETTING GOOD RESULTS
-    #centroid = (32.8244637,-117.377787)
-    trimmedCoordsList =  GPSCoords.trimPoints(coordsList, centroid)
-    avgRatingList = [x[0] for x in trimmedCoordsList if type(x[0]) == float]    
-    
-    percentileRankList = [stats.percentileofscore(avgRatingList, x) for x in avgRatingList] 
-
-    
-
-    NS_mile, EW_mile = GPSCoords.findOneMile(centroid)
-
-    barGrid = revisedScoringFunction.createGrid(centroid, NS_mile, EW_mile, 100.0)       
-    finalScoreList = revisedScoringFunction.scoreOfSingleBar(barGrid, trimmedCoordsList, percentileRankList)
-        
-    return finalScoreList, centroid, trimmedCoordsList
+#    cur.execute('''SELECT averageRating, latitude, longitude, name, address FROM {}'''.format(tableName))
+#    coordsList = cur.fetchall()    
+#    
+#    centroidList = [(x[1], x[2]) for x in coordsList]
+#    centroid = GPSCoords.findCentroid(centroidList)
+#    
+#    #ENTER CUSTOM CENTROID HERE IF THE DATA IS DISPERSED ENOUGH
+#    #THAT YOU ARE NOT GETTING GOOD RESULTS
+#    #centroid = (32.8244637,-117.377787)
+#    trimmedCoordsList =  GPSCoords.trimPoints(coordsList, centroid)
+#    avgRatingList = [x[0] for x in trimmedCoordsList if type(x[0]) == float]    
+#    
+#    percentileRankList = [stats.percentileofscore(avgRatingList, x) for x in avgRatingList] 
+#
+#    
+#
+#    NS_mile, EW_mile = GPSCoords.findOneMile(centroid)
+#
+#    barGrid = revisedScoringFunction.createGrid(centroid, NS_mile, EW_mile, 100.0)       
+#    finalScoreList = revisedScoringFunction.scoreOfSingleBar(barGrid, trimmedCoordsList, percentileRankList)
+#        
+#    return finalScoreList, centroid, trimmedCoordsList
 
 ################################################################################################
 ################################################################################################
