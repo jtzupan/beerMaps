@@ -61,30 +61,30 @@ def buildMainList(targetURL, state, tableName):
                         WHERE ID = ?'''.format(tableName), (bar_info.latitude, bar_info.longitude, ID))
 
         conn.commit()
-    return 'finished'
-    #limits the results to only bars within set number of miles from central location
-#    cur.execute('''SELECT averageRating, latitude, longitude, name, address FROM {}'''.format(tableName))
-#    coordsList = cur.fetchall()    
-#    
-#    centroidList = [(x[1], x[2]) for x in coordsList]
-#    centroid = GPSCoords.findCentroid(centroidList)
-#    
-#    #ENTER CUSTOM CENTROID HERE IF THE DATA IS DISPERSED ENOUGH
-#    #THAT YOU ARE NOT GETTING GOOD RESULTS
-#    #centroid = (32.8244637,-117.377787)
-#    trimmedCoordsList =  GPSCoords.trimPoints(coordsList, centroid)
-#    avgRatingList = [x[0] for x in trimmedCoordsList if type(x[0]) == float]    
-#    
-#    percentileRankList = [stats.percentileofscore(avgRatingList, x) for x in avgRatingList] 
-#
-#    
-#
-#    NS_mile, EW_mile = GPSCoords.findOneMile(centroid)
-#
-#    barGrid = revisedScoringFunction.createGrid(centroid, NS_mile, EW_mile, 100.0)       
-#    finalScoreList = revisedScoringFunction.scoreOfSingleBar(barGrid, trimmedCoordsList, percentileRankList)
-#        
-#    return finalScoreList, centroid, trimmedCoordsList
+        
+#    limits the results to only bars within set number of miles from central location
+    cur.execute('''SELECT averageRating, latitude, longitude, name, address FROM {}'''.format(tableName))
+    coordsList = cur.fetchall()    
+    
+    centroidList = [(x[1], x[2]) for x in coordsList]
+    centroid = GPSCoords.findCentroid(centroidList)
+    
+    #ENTER CUSTOM CENTROID HERE IF THE DATA IS DISPERSED ENOUGH
+    #THAT YOU ARE NOT GETTING GOOD RESULTS
+    #centroid = (32.8244637,-117.377787)
+    trimmedCoordsList =  GPSCoords.trimPoints(coordsList, centroid)
+    avgRatingList = [x[0] for x in trimmedCoordsList if type(x[0]) == float]    
+    
+    percentileRankList = [stats.percentileofscore(avgRatingList, x) for x in avgRatingList] 
+
+    
+
+    NS_mile, EW_mile = GPSCoords.findOneMile(centroid)
+
+    barGrid = revisedScoringFunction.createGrid(centroid, NS_mile, EW_mile, 100.0)       
+    finalScoreList = revisedScoringFunction.scoreOfSingleBar(barGrid, trimmedCoordsList, percentileRankList)
+        
+    return finalScoreList, centroid, trimmedCoordsList
 
 ################################################################################################
 ################################################################################################
