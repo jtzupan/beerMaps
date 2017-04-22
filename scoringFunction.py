@@ -22,7 +22,6 @@ def createGrid(barCoords, NS_mile, EW_mile, gridSize):
     
     for i in range(-1 * int(gridSize), int(gridSize) + 1):
         for j in range(-1 * int(gridSize), int(gridSize) + 1):
-            #print i,j
             nPoint = (barCoords[0] + (NS_mile_denomination * i), barCoords[1] + (EW_mile_denomination * j))
             GPSGridPoints.append(nPoint)
            
@@ -43,6 +42,3 @@ def scoreOfSingleBar(fullGrid, allOtherBarsCoords, barPercentileRankList):
                 totalScore += scoreChange
         listOfPoints.append((point, totalScore))
     return listOfPoints
-        
- #   42.25935940214366, -83.189738396824
-        #42.4064448,-83.1026078

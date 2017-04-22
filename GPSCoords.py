@@ -20,6 +20,8 @@ def createCoordsArray(listOflocations):
     
     return listOfCoords
 
+# findCentroid may not be needed now that we are using the GPS coords of the 
+# city as the map_center
 def findCentroid(listOfCoords):
     '''
     '''
@@ -33,6 +35,7 @@ def haversineDistance(coord1, coord2):
     lon1 = coord1[1]
     lat2 = coord2[0]
     lon2 = coord2[1]
+    
     
     #radius of the earth in kilometers
     R = 6372.8
@@ -61,15 +64,10 @@ def findOneMile(coord1):
     
     return NS_mile, EW_mile
     
-#used a prechoosen centroid point 
-#b/c detroit is so spread out, centroid gave wierd results
-#use findCentroid() if using in a dense area
-def trimPoints(fullList, newCenter):
-    #newCenter for testing boston
-    #newCenter = np.array((42.3653694,-71.0981929))
-    
-   # newCenter = np.array((42.432116, -83.115157))
-    return [x for x in fullList if haversineDistance(np.array((x[1], x[2])), newCenter) < 10.0]
+
+def trimPoints(fullList, map_center):
+
+    return [x for x in fullList if haversineDistance(np.array((x[1], x[2])), map_center) < 10.0]
     
     
     

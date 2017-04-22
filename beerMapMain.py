@@ -8,19 +8,21 @@ Created on Wed Mar  9 21:52:50 2016
 import web_scrape_bar_data
 import googleGeoAPI
 import GPSCoords
-import revisedScoringFunction
+import scoringFunction
 import sqlite3
 import scipy.stats as stats
 import csv
-from tqdm import tqdm
+import tqdm
+import datetime
 
 
 reload(googleGeoAPI)
 reload(web_scrape_bar_data)
 reload(GPSCoords)
-reload(revisedScoringFunction)
+reload(scoringFunction)
 
-def buildMainList(targetURL, state, tableName):
+
+def buildMainList(targetURL, city, state, tableName):
     '''Creates list with geographic information
     targetURL: url from ratebeer.com
     state: two letter state code 
@@ -38,7 +40,7 @@ def buildMainList(targetURL, state, tableName):
     cur = conn.cursor()
     cur.execute('''SELECT ID, address FROM {}'''.format(tableName))
     listOfLocations = cur.fetchall()
-    for address in tqdm(listOfLocations):
+    for address in tqdm.tqdm(listOfLocations):
         ID = address[0]
         print ID, address[1] 
         
@@ -63,27 +65,30 @@ def buildMainList(targetURL, state, tableName):
         conn.commit()
         
 #    limits the results to only bars within set number of miles from central location
-    cur.execute('''SELECT averageRating, latitude, longitude, name, address FROM {}'''.format(tableName))
+    cur.execute('''SELECT averageRating, latitude, longitude, name, address FROM {}
+                    WHERE latitude <> "no info"'''.format(tableName))
     coordsList = cur.fetchall()    
     
-    centroidList = [(x[1], x[2]) for x in coordsList]
-    centroid = GPSCoords.findCentroid(centroidList)
-    
-    #ENTER CUSTOM CENTROID HERE IF THE DATA IS DISPERSED ENOUGH
-    #THAT YOU ARE NOT GETTING GOOD RESULTS
-    #centroid = (32.8244637,-117.377787)
+#    use the latitude and longitude of city for center approximation
+    centroid_tuple = googleGeoAPI.googleAPI(city, state)
+    centroid = (float(centroid_tuple.latitude), float(centroid_tuple.longitude))
+
+#    finds all the bars that are within 10 miles of the centroid
+#    then finds the average rating of each bar in the result set
     trimmedCoordsList =  GPSCoords.trimPoints(coordsList, centroid)
     avgRatingList = [x[0] for x in trimmedCoordsList if type(x[0]) == float]    
     
     percentileRankList = [stats.percentileofscore(avgRatingList, x) for x in avgRatingList] 
 
     
-
     NS_mile, EW_mile = GPSCoords.findOneMile(centroid)
-
-    barGrid = revisedScoringFunction.createGrid(centroid, NS_mile, EW_mile, 100.0)       
-    finalScoreList = revisedScoringFunction.scoreOfSingleBar(barGrid, trimmedCoordsList, percentileRankList)
-        
+    startTime = datetime.datetime.now()
+    barGrid = scoringFunction.createGrid(centroid, NS_mile, EW_mile, 100.0)       
+    finalScoreList = scoringFunction.scoreOfSingleBar(barGrid, trimmedCoordsList, percentileRankList)
+    endTime = datetime.datetime.now()
+    
+    timediff = endTime - startTime
+    print timediff
     return finalScoreList, centroid, trimmedCoordsList
 
 ################################################################################################
@@ -110,21 +115,18 @@ def writeToCSV(inputFile, outputFileName):
 ################################################################################################
 ################################################################################################
 ################################################################################################
-import json
+
 import codecs
-#
-#conn = sqlite3.connect('geodata.sqlite')
-#cur = conn.cursor()
-#
-#cur.execute('SELECT * FROM Locations')
+
+# maybe load from db instead of passing lists
 
 
-def writeJSON(inputFile, barList, centroid, outputFileName):
+
+def writeJS(inputFile, barList, centroid, outputFileName):
     finalFile = [x for x in inputFile if x[1]>0]
-    numOfRecords = len(finalFile)   
-    inputFile.sort(key = lambda s: s[1])
-    inputFile.reverse()
-    inputFile = inputFile[: numOfRecords]   
+    numOfRecords = len(finalFile)     
+    finalFile.sort(key = lambda s: s[1])
+    finalFile.reverse()
 
     
     fhand = codecs.open(outputFileName,'w', "utf-8")
