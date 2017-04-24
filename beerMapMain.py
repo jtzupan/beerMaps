@@ -95,21 +95,21 @@ def buildMainList(targetURL, city, state, tableName):
 ################################################################################################
 ################################################################################################
 
-def writeToCSV(inputFile, outputFileName):
-    '''
-    '''
-    inputFile.sort(key = lambda s: s[1])
-    inputFile.reverse()
-    maxIter = 1500
-    f = open(outputFileName, 'wb')
-    try:
-        writer = csv.writer(f)
-        writer.writerow( ('Latitude', 'Longitude', 'Score') )
-        for i in range(maxIter):
-            
-            writer.writerow( (inputFile[i][0][0], inputFile[i][0][1],inputFile[i][1]) )
-    finally:
-        f.close()
+#def writeToCSV(inputFile, outputFileName):
+#    '''
+#    '''
+#    inputFile.sort(key = lambda s: s[1])
+#    inputFile.reverse()
+#    maxIter = 1500
+#    f = open(outputFileName, 'wb')
+#    try:
+#        writer = csv.writer(f)
+#        writer.writerow( ('Latitude', 'Longitude', 'Score') )
+#        for i in range(maxIter):
+#            
+#            writer.writerow( (inputFile[i][0][0], inputFile[i][0][1],inputFile[i][1]) )
+#    finally:
+#        f.close()
 
 
 ################################################################################################
@@ -151,13 +151,9 @@ def writeJS(inputFile, barList, centroid, outputFileName):
             if count > 0:
                 fhand.write(",\n")
             lat = row[0][0]
-#            site.append(str(lat))
             lng = row[0][1]
-#            site.append(str(lon))
-            print lat, lng
             if count <= numOfRecords * 0.05:
                 dotType = "https://storage.googleapis.com/support-kms-prod/SNP_2752125_en_v0"
-#                dotType = "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
             elif count <= numOfRecords * 0.25:
                 dotType = "https://storage.googleapis.com/support-kms-prod/SNP_2752264_en_v0"
             elif count <= numOfRecords * 0.5:
@@ -180,5 +176,7 @@ def writeJS(inputFile, barList, centroid, outputFileName):
     print count, "records written to {}".format(outputFileName)
     print "Open where.html to view the data in a browser"
 
-
+def runAll(targetURL, city, state, tableName, outputFileName='where.js'):
+    finalScoreList, centroid, trimmedCoordsList = buildMainList(targetURL, city, state, tableName)
+    writeJS(finalScoreList, trimmedCoordsList, centroid, outputFileName)
     
