@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3acca48267b1463e9a0c622107452ea9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3acca48267b1463e9a0c622107452ea9" ></div>
+        
+</body>
+<script>    
+    
+            var map_3acca48267b1463e9a0c622107452ea9 = L.map(
+                "map_3acca48267b1463e9a0c622107452ea9",
+                {
+                    center: [41.5051613, -81.6934446],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ec639315feae416085f41aad81a8da96 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+            var marker_1a09ff0772d24d248850093445ff76f0 = L.marker(
+                [41.477245, -81.803918],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_fb18d2b8acdb4ae8abf7afffedc8eb7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cd975ecf07c4026a4f025ca7c78db58 = $(`<div id="html_2cd975ecf07c4026a4f025ca7c78db58" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Buckeye Beer Engine</p>                             <p>Rating: 96.0</p>                         </div>                     </div></div>`)[0];
+            popup_fb18d2b8acdb4ae8abf7afffedc8eb7c.setContent(html_2cd975ecf07c4026a4f025ca7c78db58);
+        
+
+        marker_1a09ff0772d24d248850093445ff76f0.bindPopup(popup_fb18d2b8acdb4ae8abf7afffedc8eb7c)
+        ;
+
+        
+    
+    
+            var marker_8eeb8aa77c7147bb95fe0e4630f4c7ab = L.marker(
+                [41.477156, -81.695125],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_5c4f03beb2ba41228c4774ba47b02d4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_526ad40d314d4de1a4981a1985becae4 = $(`<div id="html_526ad40d314d4de1a4981a1985becae4" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Tremont Tap House</p>                             <p>Rating: 93.0</p>                         </div>                     </div></div>`)[0];
+            popup_5c4f03beb2ba41228c4774ba47b02d4a.setContent(html_526ad40d314d4de1a4981a1985becae4);
+        
+
+        marker_8eeb8aa77c7147bb95fe0e4630f4c7ab.bindPopup(popup_5c4f03beb2ba41228c4774ba47b02d4a)
+        ;
+
+        
+    
+    
+            var marker_4e7039580c3647fea05ed7aec5f8c0e4 = L.marker(
+                [41.5080180750231, -81.5805214338366],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_dffad46dca45405db22c3512f38a5980 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbb5c47fc3b74b018d8f6587f9f10710 = $(`<div id="html_cbb5c47fc3b74b018d8f6587f9f10710" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Name not found</p>                             <p>Rating: 93.0</p>                         </div>                     </div></div>`)[0];
+            popup_dffad46dca45405db22c3512f38a5980.setContent(html_cbb5c47fc3b74b018d8f6587f9f10710);
+        
+
+        marker_4e7039580c3647fea05ed7aec5f8c0e4.bindPopup(popup_dffad46dca45405db22c3512f38a5980)
+        ;
+
+        
+    
+    
+            var marker_e7cd01accf6a47daba26dfe0fc1e2c23 = L.marker(
+                [41.4852417346939, -81.7986256326531],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_766d75974c6e4467b796d32cdaad8fed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e04728f4ec147cabc19e5f1cf5b5130 = $(`<div id="html_0e04728f4ec147cabc19e5f1cf5b5130" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Melt Bar & Grilled</p>                             <p>Rating: 91.0</p>                         </div>                     </div></div>`)[0];
+            popup_766d75974c6e4467b796d32cdaad8fed.setContent(html_0e04728f4ec147cabc19e5f1cf5b5130);
+        
+
+        marker_e7cd01accf6a47daba26dfe0fc1e2c23.bindPopup(popup_766d75974c6e4467b796d32cdaad8fed)
+        ;
+
+        
+    
+    
+            var marker_a5404524acc544a8ba159125d6491484 = L.marker(
+                [41.4844172, -81.7044266],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_e6a9bc783b754b1f863a79c6c52ffdd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1344e2c735534444970e7ed0f6d105f7 = $(`<div id="html_1344e2c735534444970e7ed0f6d105f7" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Great Lakes Brewing Company</p>                             <p>Rating: 90.0</p>                         </div>                     </div></div>`)[0];
+            popup_e6a9bc783b754b1f863a79c6c52ffdd2.setContent(html_1344e2c735534444970e7ed0f6d105f7);
+        
+
+        marker_a5404524acc544a8ba159125d6491484.bindPopup(popup_e6a9bc783b754b1f863a79c6c52ffdd2)
+        ;
+
+        
+    
+    
+            var marker_1652de71323945409f08fd4ff5ba235b = L.marker(
+                [41.5015216, -81.556308756678],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_e195d799a81e476da093574a09dceb2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_550e70c63b99491c8b56d8c5fdfe25e3 = $(`<div id="html_550e70c63b99491c8b56d8c5fdfe25e3" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Melt Bar & Grilled - Cleveland Heights</p>                             <p>Rating: 88.0</p>                         </div>                     </div></div>`)[0];
+            popup_e195d799a81e476da093574a09dceb2b.setContent(html_550e70c63b99491c8b56d8c5fdfe25e3);
+        
+
+        marker_1652de71323945409f08fd4ff5ba235b.bindPopup(popup_e195d799a81e476da093574a09dceb2b)
+        ;
+
+        
+    
+    
+            var marker_937b8ef6c526451dac06f71c6097f9e1 = L.marker(
+                [41.3962696, -81.641836],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_300f88299c9441149cfa568682513214 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19c5cf14bc1040b8a0a61cdbdf6178b9 = $(`<div id="html_19c5cf14bc1040b8a0a61cdbdf6178b9" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Winking Lizard Tavern (Independence)</p>                             <p>Rating: 87.0</p>                         </div>                     </div></div>`)[0];
+            popup_300f88299c9441149cfa568682513214.setContent(html_19c5cf14bc1040b8a0a61cdbdf6178b9);
+        
+
+        marker_937b8ef6c526451dac06f71c6097f9e1.bindPopup(popup_300f88299c9441149cfa568682513214)
+        ;
+
+        
+    
+    
+            var marker_6e61fc77802447298221560f85aac49b = L.marker(
+                [41.486036, -81.7045958],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_094a3be87dec407e8ff6c10a8e6cb14a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e756ee6a6d604b9cb7b5cbe9cd17b6ed = $(`<div id="html_e756ee6a6d604b9cb7b5cbe9cd17b6ed" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Nano Brew Cleveland</p>                             <p>Rating: 86.0</p>                         </div>                     </div></div>`)[0];
+            popup_094a3be87dec407e8ff6c10a8e6cb14a.setContent(html_e756ee6a6d604b9cb7b5cbe9cd17b6ed);
+        
+
+        marker_6e61fc77802447298221560f85aac49b.bindPopup(popup_094a3be87dec407e8ff6c10a8e6cb14a)
+        ;
+
+        
+    
+    
+            var marker_d98fb6f4f6924b19beb95466ec789a22 = L.marker(
+                [41.4612741, -81.8541868],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_7a93db9571c44d918e16a8b784002e59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abc202de1e8745ba9a2d1605e7ad7a35 = $(`<div id="html_abc202de1e8745ba9a2d1605e7ad7a35" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Rocky River Brewing Company</p>                             <p>Rating: 83.0</p>                         </div>                     </div></div>`)[0];
+            popup_7a93db9571c44d918e16a8b784002e59.setContent(html_abc202de1e8745ba9a2d1605e7ad7a35);
+        
+
+        marker_d98fb6f4f6924b19beb95466ec789a22.bindPopup(popup_7a93db9571c44d918e16a8b784002e59)
+        ;
+
+        
+    
+    
+            var marker_195918824ae54d0a88284edd0144a891 = L.marker(
+                [41.503726, -81.5658351],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_ce3aac327fd647f087eca83ea460bf8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_929e59120f54487a848ca67a34b9889d = $(`<div id="html_929e59120f54487a848ca67a34b9889d" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: BottleHouse Brewery & Mead Hall (Cleveland Heights)</p>                             <p>Rating: 83.0</p>                         </div>                     </div></div>`)[0];
+            popup_ce3aac327fd647f087eca83ea460bf8d.setContent(html_929e59120f54487a848ca67a34b9889d);
+        
+
+        marker_195918824ae54d0a88284edd0144a891.bindPopup(popup_ce3aac327fd647f087eca83ea460bf8d)
+        ;
+
+        
+    
+    
+            var marker_203d31d25d034a17b878c8c65059da09 = L.marker(
+                [41.4848964, -81.7036495],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_8e79936a5d7f48d2bc2e9d00b6db3417 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5f6cc8ace6d46c39046060922159302 = $(`<div id="html_d5f6cc8ace6d46c39046060922159302" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Market Garden Brewery</p>                             <p>Rating: 81.0</p>                         </div>                     </div></div>`)[0];
+            popup_8e79936a5d7f48d2bc2e9d00b6db3417.setContent(html_d5f6cc8ace6d46c39046060922159302);
+        
+
+        marker_203d31d25d034a17b878c8c65059da09.bindPopup(popup_8e79936a5d7f48d2bc2e9d00b6db3417)
+        ;
+
+        
+    
+    
+            var marker_d213136d32d341e8882ab4d702db09c0 = L.marker(
+                [41.4834420707071, -81.7047913939394],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_a1da99494d534e56ba29e7adbe58bd77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff5aa972c706439491d19feffb431cb5 = $(`<div id="html_ff5aa972c706439491d19feffb431cb5" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Hansa Brewery</p>                             <p>Rating: 80.0</p>                         </div>                     </div></div>`)[0];
+            popup_a1da99494d534e56ba29e7adbe58bd77.setContent(html_ff5aa972c706439491d19feffb431cb5);
+        
+
+        marker_d213136d32d341e8882ab4d702db09c0.bindPopup(popup_a1da99494d534e56ba29e7adbe58bd77)
+        ;
+
+        
+    
+    
+            var marker_1512056040ae41c5aa897f437d142eba = L.marker(
+                [41.485437, -81.7042624],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_0ec12254df5d433398e532801e41c44a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbdd7ad0e1f34b729dee3c635265b600 = $(`<div id="html_fbdd7ad0e1f34b729dee3c635265b600" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Town Hall</p>                             <p>Rating: 80.0</p>                         </div>                     </div></div>`)[0];
+            popup_0ec12254df5d433398e532801e41c44a.setContent(html_fbdd7ad0e1f34b729dee3c635265b600);
+        
+
+        marker_1512056040ae41c5aa897f437d142eba.bindPopup(popup_0ec12254df5d433398e532801e41c44a)
+        ;
+
+        
+    
+    
+            var marker_aa5ef1faae724d0eb826f60635010fa8 = L.marker(
+                [41.4851867346939, -81.7997463061225],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_011256d45eb3427d8241d4213038b478 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62314cf8bf664448b34f42adfb2ff866 = $(`<div id="html_62314cf8bf664448b34f42adfb2ff866" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Deagan’s Kitchen</p>                             <p>Rating: 80.0</p>                         </div>                     </div></div>`)[0];
+            popup_011256d45eb3427d8241d4213038b478.setContent(html_62314cf8bf664448b34f42adfb2ff866);
+        
+
+        marker_aa5ef1faae724d0eb826f60635010fa8.bindPopup(popup_011256d45eb3427d8241d4213038b478)
+        ;
+
+        
+    
+    
+            var marker_647183d226974e719980ea32ba6fd2ce = L.marker(
+                [41.4644456, -81.5685842],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_814d8409dc8e4fb79e4538f455ed2b0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_161a71cc61474dd99b127c8a4b3efed2 = $(`<div id="html_161a71cc61474dd99b127c8a4b3efed2" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: B Spot Burgers</p>                             <p>Rating: 80.0</p>                         </div>                     </div></div>`)[0];
+            popup_814d8409dc8e4fb79e4538f455ed2b0f.setContent(html_161a71cc61474dd99b127c8a4b3efed2);
+        
+
+        marker_647183d226974e719980ea32ba6fd2ce.bindPopup(popup_814d8409dc8e4fb79e4538f455ed2b0f)
+        ;
+
+        
+    
+    
+            var marker_1edc6480ead044ec8f605ca8718d4a4b = L.marker(
+                [41.4799605, -81.7140045],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_6ebe092ed0af48239a33d47eb732affb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4c3ca7adaf242778a9457230fc902f4 = $(`<div id="html_a4c3ca7adaf242778a9457230fc902f4" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Platform Beer Company</p>                             <p>Rating: 80.0</p>                         </div>                     </div></div>`)[0];
+            popup_6ebe092ed0af48239a33d47eb732affb.setContent(html_a4c3ca7adaf242778a9457230fc902f4);
+        
+
+        marker_1edc6480ead044ec8f605ca8718d4a4b.bindPopup(popup_6ebe092ed0af48239a33d47eb732affb)
+        ;
+
+        
+    
+    
+            var marker_fd66d023565946eaa915b1c77671774a = L.marker(
+                [41.3941411, -81.644606],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_e59cf600ad574ddc85a5fa815267a6c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f321ffc9c1de4d6aadaf867afc42c9bd = $(`<div id="html_f321ffc9c1de4d6aadaf867afc42c9bd" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Melt Bar & Grilled - Independence</p>                             <p>Rating: 80.0</p>                         </div>                     </div></div>`)[0];
+            popup_e59cf600ad574ddc85a5fa815267a6c8.setContent(html_f321ffc9c1de4d6aadaf867afc42c9bd);
+        
+
+        marker_fd66d023565946eaa915b1c77671774a.bindPopup(popup_e59cf600ad574ddc85a5fa815267a6c8)
+        ;
+
+        
+    
+    
+            var marker_01c586ef23dc47ed95e266c8dcff0e43 = L.marker(
+                [41.5091079, -81.5800837666667],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_3825264ae57c42e8926a951312f2f936 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbacecca28cf4a0085dcbfd2e9917a59 = $(`<div id="html_bbacecca28cf4a0085dcbfd2e9917a59" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Winking Lizard Tavern (Cleveland Heights)</p>                             <p>Rating: 77.0</p>                         </div>                     </div></div>`)[0];
+            popup_3825264ae57c42e8926a951312f2f936.setContent(html_bbacecca28cf4a0085dcbfd2e9917a59);
+        
+
+        marker_01c586ef23dc47ed95e266c8dcff0e43.bindPopup(popup_3825264ae57c42e8926a951312f2f936)
+        ;
+
+        
+    
+    
+            var marker_5b0a90dfb47b4c56a3a44b7156405af6 = L.marker(
+                [41.499106122449, -81.6902828163265],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_5268cf3d75d7414ea4d766c7bb097dee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_566ecc4e85b24ee180d8594c7d7f7d87 = $(`<div id="html_566ecc4e85b24ee180d8594c7d7f7d87" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Greenhouse Tavern</p>                             <p>Rating: 77.0</p>                         </div>                     </div></div>`)[0];
+            popup_5268cf3d75d7414ea4d766c7bb097dee.setContent(html_566ecc4e85b24ee180d8594c7d7f7d87);
+        
+
+        marker_5b0a90dfb47b4c56a3a44b7156405af6.bindPopup(popup_5268cf3d75d7414ea4d766c7bb097dee)
+        ;
+
+        
+    
+    
+            var marker_8f8e9ed7d1d147de802cf3ebbeddd7a6 = L.marker(
+                [41.49782745, -81.5648843220657],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_4cbdee585039471e98236df9b31b3b1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffed403c1d6f41ed993f6fa7a77287a2 = $(`<div id="html_ffed403c1d6f41ed993f6fa7a77287a2" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: The Wine Spot</p>                             <p>Rating: 77.0</p>                         </div>                     </div></div>`)[0];
+            popup_4cbdee585039471e98236df9b31b3b1b.setContent(html_ffed403c1d6f41ed993f6fa7a77287a2);
+        
+
+        marker_8f8e9ed7d1d147de802cf3ebbeddd7a6.bindPopup(popup_4cbdee585039471e98236df9b31b3b1b)
+        ;
+
+        
+    
+    
+            var marker_3ee1b6d7ac76416da607f2dc949262d7 = L.marker(
+                [41.4847528, -81.7040219],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_dd295db480ee4bfb8d6c70429d426428 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10ca0d2dbd444d76bb3a236592f6f800 = $(`<div id="html_10ca0d2dbd444d76bb3a236592f6f800" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: McNultys Bier Markt</p>                             <p>Rating: 76.0</p>                         </div>                     </div></div>`)[0];
+            popup_dd295db480ee4bfb8d6c70429d426428.setContent(html_10ca0d2dbd444d76bb3a236592f6f800);
+        
+
+        marker_3ee1b6d7ac76416da607f2dc949262d7.bindPopup(popup_dd295db480ee4bfb8d6c70429d426428)
+        ;
+
+        
+    
+    
+            var marker_3e95f29b3e4e40478d62940eba3bb7b9 = L.marker(
+                [41.5240832631579, -81.5721319473684],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_8ad6f7e93e6c4c1893275d2512898ce1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae0617d368624b429113833a32ea8458 = $(`<div id="html_ae0617d368624b429113833a32ea8458" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Boss Dog Brewing</p>                             <p>Rating: 74.0</p>                         </div>                     </div></div>`)[0];
+            popup_8ad6f7e93e6c4c1893275d2512898ce1.setContent(html_ae0617d368624b429113833a32ea8458);
+        
+
+        marker_3e95f29b3e4e40478d62940eba3bb7b9.bindPopup(popup_8ad6f7e93e6c4c1893275d2512898ce1)
+        ;
+
+        
+    
+    
+            var marker_0cc58f47422b43aa9074f291b0299f30 = L.marker(
+                [41.4857515, -81.704757],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_cfb7640d3db44ef8bc078c3c4db1151f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94102d1501d54589a5a164d102345b2d = $(`<div id="html_94102d1501d54589a5a164d102345b2d" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: ABC The Tavern</p>                             <p>Rating: 74.0</p>                         </div>                     </div></div>`)[0];
+            popup_cfb7640d3db44ef8bc078c3c4db1151f.setContent(html_94102d1501d54589a5a164d102345b2d);
+        
+
+        marker_0cc58f47422b43aa9074f291b0299f30.bindPopup(popup_cfb7640d3db44ef8bc078c3c4db1151f)
+        ;
+
+        
+    
+    
+            var marker_c430cef0d1a44c97a43d42cd55e55d4e = L.marker(
+                [41.4848589, -81.7264979],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_a6609fbfae8149e5ab2e682bf0cf6ed2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ba3b543e2364d9da8a90317fa2ef7b5 = $(`<div id="html_0ba3b543e2364d9da8a90317fa2ef7b5" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Happy Dog</p>                             <p>Rating: 73.0</p>                         </div>                     </div></div>`)[0];
+            popup_a6609fbfae8149e5ab2e682bf0cf6ed2.setContent(html_0ba3b543e2364d9da8a90317fa2ef7b5);
+        
+
+        marker_c430cef0d1a44c97a43d42cd55e55d4e.bindPopup(popup_a6609fbfae8149e5ab2e682bf0cf6ed2)
+        ;
+
+        
+    
+    
+            var marker_da1c67ed7e87413a96b040147753c243 = L.marker(
+                [41.5076810738255, -81.6869233422819],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_fe213ca346934e9ca0a44e3a6d9dd672 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98248cdadf0b43b2a5f826c631d4db1d = $(`<div id="html_98248cdadf0b43b2a5f826c631d4db1d" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Noble Beast Brewing Co.</p>                             <p>Rating: 73.0</p>                         </div>                     </div></div>`)[0];
+            popup_fe213ca346934e9ca0a44e3a6d9dd672.setContent(html_98248cdadf0b43b2a5f826c631d4db1d);
+        
+
+        marker_da1c67ed7e87413a96b040147753c243.bindPopup(popup_fe213ca346934e9ca0a44e3a6d9dd672)
+        ;
+
+        
+    
+    
+            var marker_2b2b46e632ec4c6c93c1d3d7adcfa778 = L.marker(
+                [41.4988740816326, -81.690215877551],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_13be3b02eda34f73b5d9124c65c7c4e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73a25d816ff84c0f9c91f5391e444606 = $(`<div id="html_73a25d816ff84c0f9c91f5391e444606" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Lola</p>                             <p>Rating: 73.0</p>                         </div>                     </div></div>`)[0];
+            popup_13be3b02eda34f73b5d9124c65c7c4e0.setContent(html_73a25d816ff84c0f9c91f5391e444606);
+        
+
+        marker_2b2b46e632ec4c6c93c1d3d7adcfa778.bindPopup(popup_13be3b02eda34f73b5d9124c65c7c4e0)
+        ;
+
+        
+    
+    
+            var marker_df9aaa91366442169c16dd9a8c4bee27 = L.marker(
+                [41.502542, -81.655119],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_eebb7952ebb842bba3df5d0af808c4dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad8fe6afffc74f31a89eef47c6da6209 = $(`<div id="html_ad8fe6afffc74f31a89eef47c6da6209" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Forti’s</p>                             <p>Rating: 71.0</p>                         </div>                     </div></div>`)[0];
+            popup_eebb7952ebb842bba3df5d0af808c4dd.setContent(html_ad8fe6afffc74f31a89eef47c6da6209);
+        
+
+        marker_df9aaa91366442169c16dd9a8c4bee27.bindPopup(popup_eebb7952ebb842bba3df5d0af808c4dd)
+        ;
+
+        
+    
+    
+            var marker_181bc44a39714eefadc8fb8b4eb77da4 = L.marker(
+                [41.4835912222222, -81.7048866666667],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_d0879d0609004a8085f52fd64070d6d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7edb928aada645829ca89cd269acd261 = $(`<div id="html_7edb928aada645829ca89cd269acd261" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Touch Supper Club</p>                             <p>Rating: 71.0</p>                         </div>                     </div></div>`)[0];
+            popup_d0879d0609004a8085f52fd64070d6d3.setContent(html_7edb928aada645829ca89cd269acd261);
+        
+
+        marker_181bc44a39714eefadc8fb8b4eb77da4.bindPopup(popup_d0879d0609004a8085f52fd64070d6d3)
+        ;
+
+        
+    
+    
+            var marker_adc414923c874ac083fbb7aff19fb24a = L.marker(
+                [41.4381879361378, -81.80135996953],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_cdcd832c2cbb4553adad3c7ccd51f41d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34ec9d6edebf414191456790044467cf = $(`<div id="html_34ec9d6edebf414191456790044467cf" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: AMP 150 - Marriott Cleveland Airport</p>                             <p>Rating: 70.0</p>                         </div>                     </div></div>`)[0];
+            popup_cdcd832c2cbb4553adad3c7ccd51f41d.setContent(html_34ec9d6edebf414191456790044467cf);
+        
+
+        marker_adc414923c874ac083fbb7aff19fb24a.bindPopup(popup_cdcd832c2cbb4553adad3c7ccd51f41d)
+        ;
+
+        
+    
+    
+            var marker_564deb93f2124d10a6364a3cf82ad42e = L.marker(
+                [41.5758896262626, -81.5607519494949],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_2ee70085e72648cabade97c46e2f0d57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b69983588f0468690072df4d7f8435e = $(`<div id="html_2b69983588f0468690072df4d7f8435e" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Grovewood Tavern and Bar</p>                             <p>Rating: 70.0</p>                         </div>                     </div></div>`)[0];
+            popup_2ee70085e72648cabade97c46e2f0d57.setContent(html_2b69983588f0468690072df4d7f8435e);
+        
+
+        marker_564deb93f2124d10a6364a3cf82ad42e.bindPopup(popup_2ee70085e72648cabade97c46e2f0d57)
+        ;
+
+        
+    
+    
+            var marker_1850c56cfe6b4f7498489f74d56bd3be = L.marker(
+                [41.50486385, -81.689305528217],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_50e297d506624600acd4c6addf4ff0c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_356cccfeab9a4cd5969fc50578c5bf20 = $(`<div id="html_356cccfeab9a4cd5969fc50578c5bf20" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Winks Bar and Grille</p>                             <p>Rating: 68.0</p>                         </div>                     </div></div>`)[0];
+            popup_50e297d506624600acd4c6addf4ff0c8.setContent(html_356cccfeab9a4cd5969fc50578c5bf20);
+        
+
+        marker_1850c56cfe6b4f7498489f74d56bd3be.bindPopup(popup_50e297d506624600acd4c6addf4ff0c8)
+        ;
+
+        
+    
+    
+            var marker_11ad5d221e8946ec8a1ea934b89afb1b = L.marker(
+                [41.571203321755, -81.5707360216748],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_7915b6a98bb6419287c2942f0a62b5ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_531e95c0847d4794804b9b57059b22f5 = $(`<div id="html_531e95c0847d4794804b9b57059b22f5" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Beachland Ballroom</p>                             <p>Rating: 64.0</p>                         </div>                     </div></div>`)[0];
+            popup_7915b6a98bb6419287c2942f0a62b5ec.setContent(html_531e95c0847d4794804b9b57059b22f5);
+        
+
+        marker_11ad5d221e8946ec8a1ea934b89afb1b.bindPopup(popup_7915b6a98bb6419287c2942f0a62b5ec)
+        ;
+
+        
+    
+    
+            var marker_73852ee49c424df5be9adab810796bb6 = L.marker(
+                [41.51140084, -81.5798704],
+                {}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+    
+        var popup_2f46434ae422410398ed892bb33d3d7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_917c2655f11a4842b132037bed5a1091 = $(`<div id="html_917c2655f11a4842b132037bed5a1091" style="width: 100.0%; height: 100.0%;"><div class="row">                         <div class="column">                             <p>Name: Grog Shop</p>                             <p>Rating: 60.0</p>                         </div>                     </div></div>`)[0];
+            popup_2f46434ae422410398ed892bb33d3d7c.setContent(html_917c2655f11a4842b132037bed5a1091);
+        
+
+        marker_73852ee49c424df5be9adab810796bb6.bindPopup(popup_2f46434ae422410398ed892bb33d3d7c)
+        ;
+
+        
+    
+    
+            var heat_map_1bbecd1f4f7848c585543e35a4faef60 = L.heatLayer(
+                [[41.52930965877559, -81.5970640838986, 0.008144952095643308], [41.527846121880096, -81.60095824616532, 0.0018346477311839188], [41.527846121880096, -81.59901116503197, 0.014713035226968447], [41.527846121880096, -81.5970640838986, 0.026711443053583774], [41.5263825849846, -81.60290532729869, 0.004443210895391544], [41.5263825849846, -81.60095824616532, 0.018740045221131586], [41.5263825849846, -81.59901116503197, 0.032255701601856826], [41.5263825849846, -81.5970640838986, 0.04489384608534793], [41.52491904808912, -81.60485240843205, 0.004510078051172604], [41.52491904808912, -81.60290532729869, 0.02013906481587518], [41.52491904808912, -81.60095824616532, 0.03509824627583341], [41.52491904808912, -81.59901116503197, 0.04929496106100803], [41.52491904808912, -81.5970640838986, 0.06262481366570956], [41.523455511193625, -81.6067994895654, 0.002033792871991638], [41.523455511193625, -81.60485240843205, 0.018878921878591904], [41.523455511193625, -81.60290532729869, 0.0351709284578284], [41.523455511193625, -81.60095824616532, 0.050826081505291214], [41.523455511193625, -81.59901116503197, 0.06574725260582068], [41.523455511193625, -81.5970640838986, 0.07982263525234734], [41.52199197429813, -81.6067994895654, 0.01498754912786567], [41.52199197429813, -81.60485240843205, 0.03247188621684016], [41.52199197429813, -81.60290532729869, 0.049446456640929934], [41.52199197429813, -81.60095824616532, 0.06582694187085907], [41.52199197429813, -81.59901116503197, 0.0815134221265194], [41.52199197429813, -81.5970640838986, 0.09638811765720941], [41.520528437402646, -81.60874657069877, 0.008548963718638515], [41.520528437402646, -81.6067994895654, 0.027065760829285374], [41.520528437402646, -81.60485240843205, 0.0451926568086851], [41.520528437402646, -81.60290532729869, 0.06286144036610396], [41.520528437402646, -81.60095824616532, 0.0799894349081824], [41.520528437402646, -81.59901116503197, 0.09647640033761495], [41.520528437402646, -81.5970640838986, 0.11220108036099082], [41.51906490050715, -81.60874657069877, 0.019076233951524066], [41.51906490050715, -81.6067994895654, 0.03817387386795203], [41.51906490050715, -81.60485240843205, 0.05693615254438633], [41.51906490050715, -81.60290532729869, 0.07529981297420302], [41.51906490050715, -81.60095824616532, 0.09318656937435921], [41.51906490050715, -81.59901116503197, 0.11049918933796478], [41.51906490050715, -81.5970640838986, 0.12711673234981855], [41.51760136361166, -81.61069365183214, 0.008672794013427609], [41.51760136361166, -81.60874657069877, 0.028558641860845592], [41.51760136361166, -81.6067994895654, 0.04821256488529046], [41.51760136361166, -81.60485240843205, 0.06758989315874492], [41.51760136361166, -81.60290532729869, 0.08663461735588301], [41.51760136361166, -81.60095824616532, 0.1052759437382353], [41.51760136361166, -81.59901116503197, 0.12342373160083318], [41.51760136361166, -81.5970640838986, 0.14096252056489852], [41.516137826716175, -81.61069365183214, 0.016556497329094526], [41.516137826716175, -81.60874657069877, 0.036907932861103526], [41.516137826716175, -81.6067994895654, 0.05708011081660625], [41.516137826716175, -81.60485240843205, 0.07703646701200532], [41.516137826716175, -81.60290532729869, 0.09673035273499317], [41.516137826716175, -81.60095824616532, 0.11610157117801308], [41.516137826716175, -81.59901116503197, 0.13507154273809877], [41.516137826716175, -81.5970640838986, 0.15353654371466008], [41.51467428982068, -81.61264073296549, 0.002398726258220456], [41.51467428982068, -81.61069365183214, 0.02327183890739281], [41.51467428982068, -81.60874657069877, 0.04403801246977237], [41.51467428982068, -81.6067994895654, 0.06467569031560616], [41.51467428982068, -81.60485240843205, 0.08515730341267011], [41.51467428982068, -81.60290532729869, 0.10544710717367792], [41.51467428982068, -81.60095824616532, 0.12549806508598266], [41.51467428982068, -81.59901116503197, 0.14524729002181255], [41.51467428982068, -81.5970640838986, 0.16460928214126866], [41.5132107529252, -81.61264073296549, 0.007564570291937924], [41.5132107529252, -81.61069365183214, 0.028750585297788483], [41.5132107529252, -81.60874657069877, 0.049868348438177286], [41.5132107529252, -81.6067994895654, 0.07090358109005601], [41.5132107529252, -81.60485240843205, 0.09183780762564148], [41.5132107529252, -81.60290532729869, 0.11264673115207], [41.5132107529252, -81.60095824616532, 0.13329781662328616], [41.5132107529252, -81.59901116503197, 0.1537466100831967], [41.5132107529252, -81.5970640838986, 0.1739309931096661], [41.511747216029704, -81.61264073296549, 0.011501908011570612], [41.511747216029704, -81.61069365183214, 0.032933094522836756], [41.511747216029704, -81.60874657069877, 0.05432776000710906], [41.511747216029704, -81.6067994895654, 0.07567803998975926], [41.511747216029704, -81.60485240843205, 0.09697366231903631], [41.511747216029704, -81.60290532729869, 0.11820096174850095], [41.511747216029704, -81.60095824616532, 0.13934137541794936], [41.511747216029704, -81.59901116503197, 0.16036907627789493], [41.511747216029704, -81.5970640838986, 0.1812471229000191], [41.51028367913421, -81.61264073296549, 0.014170381195865812], [41.51028367913421, -81.61069365183214, 0.035771239727293645], [41.51028367913421, -81.60874657069877, 0.05735827330511443], [41.51028367913421, -81.6067994895654, 0.07892844498000724], [41.51028367913421, -81.60485240843205, 0.10047776168594308], [41.51028367913421, -81.60290532729869, 0.12200086768476866], [41.51028367913421, -81.60095824616532, 0.14349041252644618], [41.51028367913421, -81.59901116503197, 0.16493603386316322], [41.51028367913421, -81.5970640838986, 0.1863226529518633], [41.508820142238726, -81.61264073296549, 0.01554163171175632], [41.508820142238726, -81.61069365183214, 0.03723100481629433], [41.508820142238726, -81.60874657069877, 0.05891862245512336], [41.508820142238726, -81.6067994895654, 0.08060409498181588], [41.508820142238726, -81.60485240843205, 0.10228690828594113], [41.508820142238726, -81.60290532729869, 0.12396636981392258], [41.508820142238726, -81.60095824616532, 0.14564152384892276], [41.508820142238726, -81.59901116503197, 0.167311013505775], [41.508820142238726, -81.5970640838986, 0.18897284580549453], [41.50735660534323, -81.68662981603325, 0.0028929873455317665], [41.50735660534323, -81.61264073296549, 0.015600759758221557], [41.50735660534323, -81.61069365183214, 0.03729444889151028], [41.50735660534323, -81.60874657069877, 0.0589869433692776], [41.50735660534323, -81.6067994895654, 0.0806779778931423], [41.50735660534323, -81.60485240843205, 0.10236720236460978], [41.50735660534323, -81.60290532729869, 0.12405414507464631], [41.50735660534323, -81.60095824616532, 0.14573815490364386], [41.50735660534323, -81.59901116503197, 0.16741830711589897], [41.50735660534323, -81.5970640838986, 0.18909324287610307], [41.50589306844774, -81.78982511610141, 0.0013013239903464536], [41.50589306844774, -81.61264073296549, 0.01434711871914366], [41.50589306844774, -81.61069365183214, 0.035960786219260625], [41.50589306844774, -81.60874657069877, 0.05756226997698702], [41.50589306844774, -81.6067994895654, 0.0791488897749346], [41.50589306844774, -81.60485240843205, 0.1007171199089511], [41.50589306844774, -81.60290532729869, 0.12226222869984152], [41.50589306844774, -81.60095824616532, 0.143777717341702], [41.50589306844774, -81.59901116503197, 0.1652544153131607], [41.50589306844774, -81.5970640838986, 0.18667896131022843], [41.504429531552255, -81.78982511610141, 0.021894477892676786], [41.504429531552255, -81.78787803496805, 0.014135372807441279], [41.504429531552255, -81.7859309538347, 0.005080314080305479], [41.504429531552255, -81.61264073296549, 0.011794350124997062], [41.504429531552255, -81.61069365183214, 0.03324643424607287], [41.504429531552255, -81.60874657069877, 0.054664601471276074], [41.504429531552255, -81.6067994895654, 0.07604153115705992], [41.504429531552255, -81.60485240843205, 0.09736765416221603], [41.504429531552255, -81.60290532729869, 0.11863022846599176], [41.504429531552255, -81.60095824616532, 0.1398119248886612], [41.504429531552255, -81.59901116503197, 0.16088859659083993], [41.504429531552255, -81.5970640838986, 0.18182563793362932], [41.50296599465676, -81.78982511610141, 0.05955628451156335], [41.50296599465676, -81.78787803496805, 0.04250022976843028], [41.50296599465676, -81.7859309538347, 0.024353151091300332], [41.50296599465676, -81.78398387270133, 0.013470414831298646], [41.50296599465676, -81.78203679156796, 0.0014881086014256102], [41.50296599465676, -81.71194187076695, 0.00411097215298754], [41.50296599465676, -81.70999478963358, 0.009670841435452401], [41.50296599465676, -81.70804770850022, 0.013642342222748986], [41.50296599465676, -81.70610062736685, 0.015956816820885053], [41.50296599465676, -81.7041535462335, 0.01657243261991035], [41.50296599465676, -81.70220646510013, 0.015477827712626391], [41.50296599465676, -81.70025938396677, 0.0126931352461759], [41.50296599465676, -81.69831230283341, 0.008268178303515667], [41.50296599465676, -81.69636522170005, 0.0022781995015186264], [41.50296599465676, -81.61264073296549, 0.007969654402515371], [41.50296599465676, -81.61069365183214, 0.029184022972400317], [41.50296599465676, -81.60874657069877, 0.05033352993384581], [41.50296599465676, -81.6067994895654, 0.0714045630199494], [41.50296599465676, -81.60485240843205, 0.09237949098096165], [41.50296599465676, -81.60290532729869, 0.11323509863393834], [41.50296599465676, -81.60095824616532, 0.1339402517380357], [41.50296599465676, -81.59901116503197, 0.15445232834195122], [41.50296599465676, -81.5970640838986, 0.1747116234408101], [41.50150245776127, -81.78982511610141, 0.09975320957750392], [41.50150245776127, -81.78787803496805, 0.08163679684248663], [41.50150245776127, -81.7859309538347, 0.061176277743507555], [41.50150245776127, -81.78398387270133, 0.038588648879884835], [41.50150245776127, -81.78203679156796, 0.01897755080574464], [41.50150245776127, -81.78008971043461, 0.005298786575910335], [41.50150245776127, -81.71583603303367, 0.008150327743841673], [41.50150245776127, -81.7138889519003, 0.01720406190755638], [41.50150245776127, -81.71194187076695, 0.024795065469168025], [41.50150245776127, -81.70999478963358, 0.030795597841992182], [41.50150245776127, -81.70804770850022, 0.03509402778933973], [41.50150245776127, -81.70610062736685, 0.037603935146946876], [41.50150245776127, -81.7041535462335, 0.038272159631628014], [41.50150245776127, -81.70220646510013, 0.041291353447877245], [41.50150245776127, -81.70025938396677, 0.042295225358632615], [41.50150245776127, -81.69831230283341, 0.0402750681275999], [41.50150245776127, -81.69636522170005, 0.035296398412195694], [41.50150245776127, -81.69441814056668, 0.027460481693011216], [41.50150245776127, -81.69247105943333, 0.016896044104567097], [41.50150245776127, -81.69052397829996, 0.013830401824092422], [41.50150245776127, -81.6885768971666, 0.005481616494910746], [41.50150245776127, -81.68662981603325, 0.000515895862921395], [41.50150245776127, -81.61264073296549, 0.0029123862067414875], [41.50150245776127, -81.61069365183214, 0.023820501416760568], [41.50150245776127, -81.60874657069877, 0.04462564140518384], [41.50150245776127, -81.6067994895654, 0.06530696707960305], [41.50150245776127, -81.60485240843205, 0.08583779474575878], [41.50150245776127, -81.60290532729869, 0.1061834769489428], [41.50150245776127, -81.60095824616532, 0.12629833915501798], [41.50150245776127, -81.59901116503197, 0.14612117984013906], [41.50150245776127, -81.5970640838986, 0.16556856018301852], [41.500038920865784, -81.78982511610141, 0.1394987621400655], [41.500038920865784, -81.78787803496805, 0.12019218441935504], [41.500038920865784, -81.7859309538347, 0.09847039012096725], [41.500038920865784, -81.78398387270133, 0.07458601154708676], [41.500038920865784, -81.78203679156796, 0.048777496203738696], [41.500038920865784, -81.78008971043461, 0.021443548087985275], [41.500038920865784, -81.77814262930124, 0.00616597822781268], [41.500038920865784, -81.71973019530039, 0.003938654597796277], [41.500038920865784, -81.71778311416703, 0.016257176012115314], [41.500038920865784, -81.71583603303367, 0.02736401569680959], [41.500038920865784, -81.7138889519003, 0.03710050165987617], [41.500038920865784, -81.71194187076695, 0.045304081957877246], [41.500038920865784, -81.70999478963358, 0.051817389663322846], [41.500038920865784, -81.70804770850022, 0.06161752655964297], [41.500038920865784, -81.70610062736685, 0.07414655954793277], [41.500038920865784, -81.7041535462335, 0.08227068281135412], [41.500038920865784, -81.70220646510013, 0.08488097981142326], [41.500038920865784, -81.70025938396677, 0.08502438123338046], [41.500038920865784, -81.69831230283341, 0.08275494930988134], [41.500038920865784, -81.69636522170005, 0.07732662242229116], [41.500038920865784, -81.69441814056668, 0.06886692985113789], [41.500038920865784, -81.69247105943333, 0.06984853608456715], [41.500038920865784, -81.69052397829996, 0.06976964254282567], [41.500038920865784, -81.6885768971666, 0.04380443151908001], [41.500038920865784, -81.68662981603325, 0.021463299326196415], [41.500038920865784, -81.68468273489988, 0.015016611517514853], [41.500038920865784, -81.68273565376651, 0.007395076463628572], [41.500038920865784, -81.61069365183214, 0.017214586968867768], [41.500038920865784, -81.60874657069877, 0.03761106987131202], [41.500038920865784, -81.6067994895654, 0.05783331181251159], [41.500038920865784, -81.60485240843205, 0.07784558628619993], [41.500038920865784, -81.60290532729869, 0.09760223916211581], [41.500038920865784, -81.60095824616532, 0.11704424168039886], [41.500038920865784, -81.59901116503197, 0.13609435576648174], [41.500038920865784, -81.5970640838986, 0.15465033197239036], [41.49857538397029, -81.78982511610141, 0.17869037764949816], [41.49857538397029, -81.78787803496805, 0.15804226885430653], [41.49857538397029, -81.7859309538347, 0.13491929827760535], [41.49857538397029, -81.78398387270133, 0.10961531301864232], [41.49857538397029, -81.78203679156796, 0.08239987774042577], [41.49857538397029, -81.78008971043461, 0.053513984632039074], [41.49857538397029, -81.77814262930124, 0.02316942659335398], [41.49857538397029, -81.77619554816788, 0.004065562396008573], [41.49857538397029, -81.72167727643375, 0.006914333507029078], [41.49857538397029, -81.71973019530039, 0.021104073325228154], [41.49857538397029, -81.71778311416703, 0.03424313113326956], [41.49857538397029, -81.71583603303367, 0.04616272913963504], [41.49857538397029, -81.7138889519003, 0.05667719626393852], [41.49857538397029, -81.71194187076695, 0.0775126375353346], [41.49857538397029, -81.70999478963358, 0.10291524742967817], [41.49857538397029, -81.70804770850022, 0.12312867847465882], [41.49857538397029, -81.70610062736685, 0.13772682454908922], [41.49857538397029, -81.7041535462335, 0.14641147663086918], [41.49857538397029, -81.70220646510013, 0.14905039120362115], [41.49857538397029, -81.70025938396677, 0.14568997775005585], [41.49857538397029, -81.69831230283341, 0.136538877981474], [41.49857538397029, -81.69636522170005, 0.12192966962843634], [41.49857538397029, -81.69441814056668, 0.10992566908985048], [41.49857538397029, -81.69247105943333, 0.11244518091150972], [41.49857538397029, -81.69052397829996, 0.11785251351724706], [41.49857538397029, -81.6885768971666, 0.08485845800602754], [41.49857538397029, -81.68662981603325, 0.045086254396387006], [41.49857538397029, -81.68468273489988, 0.035469251531550984], [41.49857538397029, -81.68273565376651, 0.027397167958110022], [41.49857538397029, -81.68078857263316, 0.018181039344987826], [41.49857538397029, -81.6788414914998, 0.007907318524210895], [41.49857538397029, -81.61069365183214, 0.009433858799981598], [41.49857538397029, -81.60874657069877, 0.029369655672324583], [41.49857538397029, -81.6067994895654, 0.049078614477191355], [41.49857538397029, -81.60485240843205, 0.06851678967228374], [41.49857538397029, -81.60290532729869, 0.0876289853772528], [41.49857538397029, -81.60095824616532, 0.10634529368387467], [41.49857538397029, -81.59901116503197, 0.12457648546107877], [41.49857538397029, -81.5970640838986, 0.14220793580719207], [41.4971118470748, -81.78982511610141, 0.21719237409108144], [41.4971118470748, -81.78787803496805, 0.19502690782041682], [41.4971118470748, -81.7859309538347, 0.17034730950923352], [41.4971118470748, -81.78398387270133, 0.1434936549337894], [41.4971118470748, -81.78203679156796, 0.11476746995314188], [41.4971118470748, -81.78008971043461, 0.08443006670798998], [41.4971118470748, -81.77814262930124, 0.05270483742307962], [41.4971118470748, -81.77619554816788, 0.01978135160047761], [41.4971118470748, -81.72362435756712, 0.006595907443040521], [41.4971118470748, -81.72167727643375, 0.022514704106841553], [41.4971118470748, -81.71973019530039, 0.037574634650287576], [41.4971118470748, -81.71778311416703, 0.05161397351805431], [41.4971118470748, -81.71583603303367, 0.06802900617102584], [41.4971118470748, -81.7138889519003, 0.10318707959589317], [41.4971118470748, -81.71194187076695, 0.13567395580581154], [41.4971118470748, -81.70999478963358, 0.16323631107499853], [41.4971118470748, -81.70804770850022, 0.18522872095323278], [41.4971118470748, -81.70610062736685, 0.20108918183795763], [41.4971118470748, -81.7041535462335, 0.2104204121771178], [41.4971118470748, -81.70220646510013, 0.21305368902924313], [41.4971118470748, -81.70025938396677, 0.20906943764157043], [41.4971118470748, -81.69831230283341, 0.19876675753753437], [41.4971118470748, -81.69636522170005, 0.18259777041106837], [41.4971118470748, -81.69441814056668, 0.16109396630149328], [41.4971118470748, -81.69247105943333, 0.13936963312125228], [41.4971118470748, -81.69052397829996, 0.1318833331560652], [41.4971118470748, -81.6885768971666, 0.10761474666161115], [41.4971118470748, -81.68662981603325, 0.08118368233274285], [41.4971118470748, -81.68468273489988, 0.05775824908753467], [41.4971118470748, -81.68273565376651, 0.047182201820384136], [41.4971118470748, -81.68078857263316, 0.03742324683455887], [41.4971118470748, -81.6788414914998, 0.026579371864450196], [41.4971118470748, -81.67689441036643, 0.014748878476695777], [41.4971118470748, -81.67494732923306, 0.002025957686861036], [41.4971118470748, -81.61069365183214, 0.0005517929380537775], [41.4971118470748, -81.60874657069877, 0.01998713507277495], [41.4971118470748, -81.6067994895654, 0.03914341621627458], [41.4971118470748, -81.60485240843205, 0.05796984432788662], [41.4971118470748, -81.60290532729869, 0.07640375689720479], [41.4971118470748, -81.60095824616532, 0.09436744471152742], [41.4971118470748, -81.59901116503197, 0.1117641599029871], [41.4971118470748, -81.5970640838986, 0.1284732270188091], [41.49564831017931, -81.78982511610141, 0.2548221584462189], [41.49564831017931, -81.78787803496805, 0.23093744707232702], [41.49564831017931, -81.7859309538347, 0.2045329151393244], [41.49564831017931, -81.78398387270133, 0.1759975763815452], [41.49564831017931, -81.78203679156796, 0.1456626804761971], [41.49564831017931, -81.78008971043461, 0.11380532244192144], [41.49564831017931, -81.77814262930124, 0.08065533328213532], [41.49564831017931, -81.77619554816788, 0.04640283276887769], [41.49564831017931, -81.77424846703452, 0.011205230752927906], [41.49564831017931, -81.72557143870047, 0.002994169561464315], [41.49564831017931, -81.72362435756712, 0.020435325070998548], [41.49564831017931, -81.72167727643375, 0.03721899591069842], [41.49564831017931, -81.71973019530039, 0.053206291178712145], [41.49564831017931, -81.71778311416703, 0.07452836398932232], [41.49564831017931, -81.71583603303367, 0.11771094383419398], [41.49564831017931, -81.7138889519003, 0.15729447932719753], [41.49564831017931, -81.71194187076695, 0.19255106356731055], [41.49564831017931, -81.70999478963358, 0.22266584159646316], [41.49564831017931, -81.70804770850022, 0.24679696505070173], [41.49564831017931, -81.70610062736685, 0.2641813021796272], [41.49564831017931, -81.7041535462335, 0.2742690432068893], [41.49564831017931, -81.70220646510013, 0.2768377552345735], [41.49564831017931, -81.70025938396677, 0.27202843775071833], [41.49564831017931, -81.69831230283341, 0.26028547320371676], [41.49564831017931, -81.69636522170005, 0.24223836376787394], [41.49564831017931, -81.69441814056668, 0.21858336477358226], [41.49564831017931, -81.69247105943333, 0.190000941707584], [41.49564831017931, -81.69052397829996, 0.15890936074033096], [41.49564831017931, -81.6885768971666, 0.13880294824761844], [41.49564831017931, -81.68662981603325, 0.11623117830421428], [41.49564831017931, -81.68468273489988, 0.09145452604633271], [41.49564831017931, -81.68273565376651, 0.06670821496313399], [41.49564831017931, -81.68078857263316, 0.056348088238533524], [41.49564831017931, -81.6788414914998, 0.044879336708506454], [41.49564831017931, -81.67689441036643, 0.032413693330113694], [41.49564831017931, -81.67494732923306, 0.019056252246792846], [41.49564831017931, -81.67300024809971, 0.0049038904290858], [41.49564831017931, -81.60874657069877, 0.009551692792477579], [41.49564831017931, -81.6067994895654, 0.028129510009917418], [41.49564831017931, -81.60485240843205, 0.04632244916559045], [41.49564831017931, -81.60290532729869, 0.06406267029164986], [41.49564831017931, -81.60095824616532, 0.08126778142989628], [41.49564831017931, -81.59901116503197, 0.0978376569168743], [41.49564831017931, -81.5970640838986, 0.11365085871646886], [41.49418477328382, -81.78982511610141, 0.2913298765714349], [41.49418477328382, -81.78787803496805, 0.26550009767974053], [41.49418477328382, -81.7859309538347, 0.23719701336172977], [41.49418477328382, -81.78398387270133, 0.20685577831711277], [41.49418477328382, -81.78203679156796, 0.17482989229006235], [41.49418477328382, -81.78008971043461, 0.14140373294218664], [41.49418477328382, -81.77814262930124, 0.10680577779403778], [41.49418477328382, -81.77619554816788, 0.07122021159082574], [41.49418477328382, -81.77424846703452, 0.03479636805177654], [41.49418477328382, -81.77230138590116, 0.0007892835072550562], [41.49418477328382, -81.72557143870047, 0.014944497412938124], [41.49418477328382, -81.72362435756712, 0.033191314540820666], [41.49418477328382, -81.72167727643375, 0.050862975485970095], [41.49418477328382, -81.71973019530039, 0.07134455495416016], [41.49418477328382, -81.71778311416703, 0.12031968060317548], [41.49418477328382, -81.71583603303367, 0.16652232114399848], [41.49418477328382, -81.7138889519003, 0.20927651205218717], [41.49418477328382, -81.71194187076695, 0.247739696449369], [41.49418477328382, -81.70999478963358, 0.28090486134005693], [41.49418477328382, -81.70804770850022, 0.30765889449367423], [41.49418477328382, -81.70610062736685, 0.3320069493164773], [41.49418477328382, -81.7041535462335, 0.3455672293841001], [41.49418477328382, -81.70220646510013, 0.3471463352885313], [41.49418477328382, -81.70025938396677, 0.3370576583012031], [41.49418477328382, -81.69831230283341, 0.32081037305150695], [41.49418477328382, -81.69636522170005, 0.30048506291765265], [41.49418477328382, -81.69441814056668, 0.27432773952552286], [41.49418477328382, -81.69247105943333, 0.24316835841966777], [41.49418477328382, -81.69052397829996, 0.20772032576542912], [41.49418477328382, -81.6885768971666, 0.17404940940152072], [41.49418477328382, -81.68662981603325, 0.15003591028613672], [41.49418477328382, -81.68468273489988, 0.12382154089168428], [41.49418477328382, -81.68273565376651, 0.09566700457425], [41.49418477328382, -81.68078857263316, 0.07489526545165762], [41.49418477328382, -81.6788414914998, 0.06274152327410136], [41.49418477328382, -81.67689441036643, 0.049587948555407914], [41.49418477328382, -81.67494732923306, 0.03555118420223675], [41.49418477328382, -81.67300024809971, 0.020736571509864826], [41.49418477328382, -81.67105316696635, 0.005237912328622446], [41.49418477328382, -81.6067994895654, 0.016136553087399867], [41.49418477328382, -81.60485240843205, 0.03368766355201192], [41.49418477328382, -81.60290532729869, 0.05073360198107166], [41.49418477328382, -81.60095824616532, 0.06719008534034923], [41.49418477328382, -81.59901116503197, 0.08295701803871447], [41.49418477328382, -81.5970640838986, 0.09791612422116554], [41.492721236388334, -81.78982511610141, 0.32636887708353196], [41.492721236388334, -81.78787803496805, 0.2983550810348658], [41.492721236388334, -81.7859309538347, 0.2679905624159077], [41.492721236388334, -81.78398387270133, 0.23574330133420027], [41.492721236388334, -81.78203679156796, 0.20197395808925817], [41.492721236388334, -81.78008971043461, 0.166961055812947], [41.492721236388334, -81.77814262930124, 0.13092144975022166], [41.492721236388334, -81.77619554816788, 0.09402577036504901], [41.492721236388334, -81.77424846703452, 0.056409769005546874], [41.492721236388334, -81.77230138590116, 0.018182611004526714], [41.492721236388334, -81.72751851983384, 0.006238949566369864], [41.492721236388334, -81.72557143870047, 0.02565824122324209], [41.492721236388334, -81.72362435756712, 0.04469591766107937], [41.492721236388334, -81.72167727643375, 0.06325652160877206], [41.492721236388334, -81.71973019530039, 0.11090907163637574], [41.492721236388334, -81.71778311416703, 0.16279848425495164], [41.492721236388334, -81.71583603303367, 0.21222558456181986], [41.492721236388334, -81.7138889519003, 0.2584888389182578], [41.492721236388334, -81.71194187076695, 0.3006509315241794], [41.492721236388334, -81.70999478963358, 0.3470893994050484], [41.492721236388334, -81.70804770850022, 0.38706560431330317], [41.492721236388334, -81.70610062736685, 0.41551725375844806], [41.492721236388334, -81.7041535462335, 0.4306510060998439], [41.492721236388334, -81.70220646510013, 0.4317230797248621], [41.492721236388334, -81.70025938396677, 0.4193145980534992], [41.492721236388334, -81.69831230283341, 0.3949883056913817], [41.492721236388334, -81.69636522170005, 0.3606643456532509], [41.492721236388334, -81.69441814056668, 0.327762397512304], [41.492721236388334, -81.69247105943333, 0.2937571102312796], [41.492721236388334, -81.69052397829996, 0.2555676609824258], [41.492721236388334, -81.6885768971666, 0.21382397719901258], [41.492721236388334, -81.68662981603325, 0.182371289642066], [41.492721236388334, -81.68468273489988, 0.15464152357673783], [41.492721236388334, -81.68273565376651, 0.1250107458258593], [41.492721236388334, -81.68078857263316, 0.09373003179635489], [41.492721236388334, -81.6788414914998, 0.08008603524363389], [41.492721236388334, -81.67689441036643, 0.0661894527405641], [41.492721236388334, -81.67494732923306, 0.051428549414376204], [41.492721236388334, -81.67300024809971, 0.03591660358136248], [41.492721236388334, -81.67105316696635, 0.01975233487114099], [41.492721236388334, -81.66910608583298, 0.0030210622006493102], [41.492721236388334, -81.6067994895654, 0.003259613882972043], [41.492721236388334, -81.60485240843205, 0.020171325964711904], [41.492721236388334, -81.60290532729869, 0.036533691346181535], [41.492721236388334, -81.60095824616532, 0.052262818026157905], [41.492721236388334, -81.59901116503197, 0.06726119309026143], [41.492721236388334, -81.5970640838986, 0.08141631589813904], [41.49125769949284, -81.78982511610141, 0.3594552234447617], [41.49125769949284, -81.78787803496805, 0.32903382804264747], [41.49125769949284, -81.7859309538347, 0.2964850548059009], [41.49125769949284, -81.78398387270133, 0.26228013536099315], [41.49125769949284, -81.78203679156796, 0.22676307921261235], [41.49125769949284, -81.78008971043461, 0.19018956029230974], [41.49125769949284, -81.77814262930124, 0.15275329311996472], [41.49125769949284, -81.77619554816788, 0.11460371848160485], [41.49125769949284, -81.77424846703452, 0.07585798969670177], [41.49125769949284, -81.77230138590116, 0.03660925207549823], [41.49125769949284, -81.77035430476779, 0.0016651908824317203], [41.49125769949284, -81.72751851983384, 0.014905790753344673], [41.49125769949284, -81.72557143870047, 0.03498049240059633], [41.49125769949284, -81.72362435756712, 0.05476672256927815], [41.49125769949284, -81.72167727643375, 0.09005806295870121], [41.49125769949284, -81.71973019530039, 0.14643807311990784], [41.49125769949284, -81.71778311416703, 0.20124373915554286], [41.49125769949284, -81.71583603303367, 0.25400425335076554], [41.49125769949284, -81.7138889519003, 0.3040491237785945], [41.49125769949284, -81.71194187076695, 0.36381828985503933], [41.49125769949284, -81.70999478963358, 0.41927278946517116], [41.49125769949284, -81.70804770850022, 0.46514895608222806], [41.49125769949284, -81.70610062736685, 0.49819140332295997], [41.49125769949284, -81.7041535462335, 0.5177566209985563], [41.49125769949284, -81.70220646510013, 0.5155454558471129], [41.49125769949284, -81.70025938396677, 0.49977310659156815], [41.49125769949284, -81.69831230283341, 0.4707795595220253], [41.49125769949284, -81.69636522170005, 0.4314147663492174], [41.49125769949284, -81.69441814056668, 0.3840031502693048], [41.49125769949284, -81.69247105943333, 0.3410730352961026], [41.49125769949284, -81.69052397829996, 0.30004121570181047], [41.49125769949284, -81.6885768971666, 0.2556452026642276], [41.49125769949284, -81.68662981603325, 0.2129753935431077], [41.49125769949284, -81.68468273489988, 0.18366705465608305], [41.49125769949284, -81.68273565376651, 0.1525122285222249], [41.49125769949284, -81.68078857263316, 0.1197765412938222], [41.49125769949284, -81.6788414914998, 0.09681558679075015], [41.49125769949284, -81.67689441036643, 0.0821203728945556], [41.49125769949284, -81.67494732923306, 0.06659256250414451], [41.49125769949284, -81.67300024809971, 0.05035206740965606], [41.49125769949284, -81.67105316696635, 0.03350092722475846], [41.49125769949284, -81.66910608583298, 0.016125454110283412], [41.49125769949284, -81.60485240843205, 0.005870595100817126], [41.49125769949284, -81.60290532729869, 0.021568263345005334], [41.49125769949284, -81.60095824616532, 0.03659880858488358], [41.49125769949284, -81.59901116503197, 0.05086904801645764], [41.49125769949284, -81.5970640838986, 0.0642737850734969], [41.48979416259735, -81.78982511610141, 0.3899204027034981], [41.48979416259735, -81.78787803496805, 0.3569423664343124], [41.48979416259735, -81.7859309538347, 0.32217274046714695], [41.48979416259735, -81.78398387270133, 0.2860388270424796], [41.48979416259735, -81.78203679156796, 0.24883868647987067], [41.48979416259735, -81.78008971043461, 0.21078780817606507], [41.48979416259735, -81.77814262930124, 0.17204666923644865], [41.48979416259735, -81.77619554816788, 0.13273767025744432], [41.48979416259735, -81.77424846703452, 0.09295599863830833], [41.48979416259735, -81.77230138590116, 0.05277687483172172], [41.48979416259735, -81.77035430476779, 0.012260550408642594], [41.48979416259735, -81.7294656009672, 0.0012913176453548756], [41.48979416259735, -81.72751851983384, 0.022100023956619246], [41.48979416259735, -81.72557143870047, 0.04275483658876442], [41.48979416259735, -81.72362435756712, 0.06804462319361634], [41.48979416259735, -81.72167727643375, 0.11850990171634844], [41.48979416259735, -81.71973019530039, 0.1772531569925011], [41.48979416259735, -81.71778311416703, 0.23482658621592567], [41.48979416259735, -81.71583603303367, 0.29085517901069635], [41.48979416259735, -81.7138889519003, 0.35495822931807286], [41.48979416259735, -81.71194187076695, 0.4236334322193043], [41.48979416259735, -81.70999478963358, 0.4863478355827885], [41.48979416259735, -81.70804770850022, 0.551411762219274], [41.48979416259735, -81.70610062736685, 0.6004191026898147], [41.48979416259735, -81.7041535462335, 0.6237791834557701], [41.48979416259735, -81.70220646510013, 0.6181549872471671], [41.48979416259735, -81.70025938396677, 0.5872961084137084], [41.48979416259735, -81.69831230283341, 0.5419847341177731], [41.48979416259735, -81.69636522170005, 0.4966640008606173], [41.48979416259735, -81.69441814056668, 0.44393295241635694], [41.48979416259735, -81.69247105943333, 0.3855173439303187], [41.48979416259735, -81.69052397829996, 0.3404415954025899], [41.48979416259735, -81.6885768971666, 0.2934581503793093], [41.48979416259735, -81.68662981603325, 0.2438006099929065], [41.48979416259735, -81.68468273489988, 0.21062156329825554], [41.48979416259735, -81.68273565376651, 0.17791330987455667], [41.48979416259735, -81.68078857263316, 0.14370858364724706], [41.48979416259735, -81.6788414914998, 0.11281186684903068], [41.48979416259735, -81.67689441036643, 0.09726476577925121], [41.48979416259735, -81.67494732923306, 0.08093237377468133], [41.48979416259735, -81.67300024809971, 0.06393886514695524], [41.48979416259735, -81.67105316696635, 0.04638718321930711], [41.48979416259735, -81.66910608583298, 0.028362414670946738], [41.48979416259735, -81.66715900469963, 0.009934870133448665], [41.48979416259735, -81.60290532729869, 0.005930749260506765], [41.48979416259735, -81.60095824616532, 0.020295997795574443], [41.48979416259735, -81.59901116503197, 0.033881324213903136], [41.48979416259735, -81.5970640838986, 0.046589552360096056], [41.48833062570186, -81.78982511610141, 0.41688027489358104], [41.48833062570186, -81.78787803496805, 0.38136948440759344], [41.48833062570186, -81.7859309538347, 0.34448736109057], [41.48833062570186, -81.78398387270133, 0.3065663156572571], [41.48833062570186, -81.78203679156796, 0.26783450246976725], [41.48833062570186, -81.78008971043461, 0.22845618161569023], [41.48833062570186, -81.77814262930124, 0.18855366651117206], [41.48833062570186, -81.77619554816788, 0.14822032005266558], [41.48833062570186, -81.77424846703452, 0.10752878357579138], [41.48833062570186, -81.77230138590116, 0.06653645784371678], [41.48833062570186, -81.77035430476779, 0.02528929507640795], [41.48833062570186, -81.76840722363443, 0.000993298952428412], [41.48833062570186, -81.7294656009672, 0.006482990053182658], [41.48833062570186, -81.72751851983384, 0.02770120026110869], [41.48833062570186, -81.72557143870047, 0.048832537396310285], [41.48833062570186, -81.72362435756712, 0.0852152339256116], [41.48833062570186, -81.72167727643375, 0.14189034853434968], [41.48833062570186, -81.71973019530039, 0.20266399486678707], [41.48833062570186, -81.71778311416703, 0.26266024450857506], [41.48833062570186, -81.71583603303367, 0.3220125535134881], [41.48833062570186, -81.7138889519003, 0.3996649357726935], [41.48833062570186, -81.71194187076695, 0.47462733252574946], [41.48833062570186, -81.70999478963358, 0.557012468676922], [41.48833062570186, -81.70804770850022, 0.6447586468643611], [41.48833062570186, -81.70610062736685, 0.7141900742952845], [41.48833062570186, -81.7041535462335, 0.7450002883925577], [41.48833062570186, -81.70220646510013, 0.7284544341709708], [41.48833062570186, -81.70025938396677, 0.6759019069448632], [41.48833062570186, -81.69831230283341, 0.6154919383715717], [41.48833062570186, -81.69636522170005, 0.5540383308184735], [41.48833062570186, -81.69441814056668, 0.4960664900134486], [41.48833062570186, -81.69247105943333, 0.43328870851983053], [41.48833062570186, -81.69052397829996, 0.37602691587778087], [41.48833062570186, -81.6885768971666, 0.32665226975501394], [41.48833062570186, -81.68662981603325, 0.27475761573868884], [41.48833062570186, -81.68468273489988, 0.23520093393701316], [41.48833062570186, -81.68273565376651, 0.20093188935350886], [41.48833062570186, -81.68078857263316, 0.16526658919011322], [41.48833062570186, -81.6788414914998, 0.1284564019291964], [41.48833062570186, -81.67689441036643, 0.1114863382586216], [41.48833062570186, -81.67494732923306, 0.0943210612579824], [41.48833062570186, -81.67300024809971, 0.07656057422809551], [41.48833062570186, -81.67105316696635, 0.058305400762923204], [41.48833062570186, -81.66910608583298, 0.039636619011952215], [41.48833062570186, -81.66715900469963, 0.020619822922970224], [41.48833062570186, -81.66521192356626, 0.0013083187577445992], [41.48833062570186, -81.60095824616532, 0.0034387482754067115], [41.48833062570186, -81.59901116503197, 0.016382948909500095], [41.48833062570186, -81.5970640838986, 0.028446838788732755], [41.48686708880637, -81.78982511610141, 0.43928069182624035], [41.48686708880637, -81.78787803496805, 0.4015480059369068], [41.48686708880637, -81.7859309538347, 0.3628558810287162], [41.48686708880637, -81.78398387270133, 0.32342280092912973], [41.48686708880637, -81.78203679156796, 0.28340478498921745], [41.48686708880637, -81.78008971043461, 0.24291734457780595], [41.48686708880637, -81.77814262930124, 0.20204806232427727], [41.48686708880637, -81.77619554816788, 0.1608645365624083], [41.48686708880637, -81.77424846703452, 0.11941970377445575], [41.48686708880637, -81.77230138590116, 0.07775554046931939], [41.48686708880637, -81.77035430476779, 0.035905705084925806], [41.48686708880637, -81.76840722363443, 0.008832021330889353], [41.48686708880637, -81.7294656009672, 0.010093205474328905], [41.48686708880637, -81.72751851983384, 0.031606351804250775], [41.48686708880637, -81.72557143870047, 0.05806161368797599], [41.48686708880637, -81.72362435756712, 0.09937731413870546], [41.48686708880637, -81.72167727643375, 0.15971564181047126], [41.48686708880637, -81.71973019530039, 0.22203876683874021], [41.48686708880637, -81.71778311416703, 0.28389827287139785], [41.48686708880637, -81.71583603303367, 0.35166405446558097], [41.48686708880637, -81.7138889519003, 0.43326276311367035], [41.48686708880637, -81.71194187076695, 0.5139330273613323], [41.48686708880637, -81.70999478963358, 0.6243850605041491], [41.48686708880637, -81.70804770850022, 0.7331764621567426], [41.48686708880637, -81.70610062736685, 0.8253793259288017], [41.48686708880637, -81.7041535462335, 0.8709846203391592], [41.48686708880637, -81.70220646510013, 0.8378437906953025], [41.48686708880637, -81.70025938396677, 0.7656916682924988], [41.48686708880637, -81.69831230283341, 0.6774081579798527], [41.48686708880637, -81.69636522170005, 0.6005183345886586], [41.48686708880637, -81.69441814056668, 0.5383216934712016], [41.48686708880637, -81.69247105943333, 0.47209635774634934], [41.48686708880637, -81.69052397829996, 0.406087900158929], [41.48686708880637, -81.6885768971666, 0.354644669416099], [41.48686708880637, -81.68662981603325, 0.3007587939208694], [41.48686708880637, -81.68468273489988, 0.2570748887095007], [41.48686708880637, -81.68273565376651, 0.22126265231475142], [41.48686708880637, -81.68078857263316, 0.18417248852807327], [41.48686708880637, -81.6788414914998, 0.14606332456349974], [41.48686708880637, -81.67689441036643, 0.12462699331455063], [41.48686708880637, -81.67494732923306, 0.10661557258502662], [41.48686708880637, -81.67300024809971, 0.08808923755507485], [41.48686708880637, -81.67105316696635, 0.06914192848982759], [41.48686708880637, -81.66910608583298, 0.049847516374570654], [41.48686708880637, -81.66715900469963, 0.030264490811960948], [41.48686708880637, -81.66521192356626, 0.01043952031254303], [41.48686708880637, -81.5970640838986, 0.009914227394305919], [41.48540355191088, -81.78982511610141, 0.45610085049890153], [41.48540355191088, -81.78787803496805, 0.41678595709451716], [41.48540355191088, -81.7859309538347, 0.37677998665224455], [41.48540355191088, -81.78398387270133, 0.3362331122570893], [41.48540355191088, -81.78203679156796, 0.2952577101990096], [41.48540355191088, -81.78008971043461, 0.25393868815990744], [41.48540355191088, -81.77814262930124, 0.21234091099823227], [41.48540355191088, -81.77619554816788, 0.1705145059861484], [41.48540355191088, -81.77424846703452, 0.12849865793148696], [41.48540355191088, -81.77230138590116, 0.08632433986891327], [41.48540355191088, -81.77035430476779, 0.044016294387314796], [41.48540355191088, -81.76840722363443, 0.01568052734410387], [41.48540355191088, -81.7294656009672, 0.012060691755505488], [41.48540355191088, -81.72751851983384, 0.033738421281216784], [41.48540355191088, -81.72557143870047, 0.06830462497340475], [41.48540355191088, -81.72362435756712, 0.1103155501452499], [41.48540355191088, -81.72167727643375, 0.17161721465779742], [41.48540355191088, -81.71973019530039, 0.2348892006429436], [41.48540355191088, -81.71778311416703, 0.2978708812460598], [41.48540355191088, -81.71583603303367, 0.3753012115311263], [41.48540355191088, -81.7138889519003, 0.46165458455997177], [41.48540355191088, -81.71194187076695, 0.5484638002106036], [41.48540355191088, -81.70999478963358, 0.6676547581596419], [41.48540355191088, -81.70804770850022, 0.7884626266192569], [41.48540355191088, -81.70610062736685, 0.9045257189478781], [41.48540355191088, -81.7041535462335, 0.9999999999999999], [41.48540355191088, -81.70220646510013, 0.918002979042373], [41.48540355191088, -81.70025938396677, 0.8238825557145205], [41.48540355191088, -81.69831230283341, 0.7263895465347304], [41.48540355191088, -81.69636522170005, 0.633685815575655], [41.48540355191088, -81.69441814056668, 0.5688639344189981], [41.48540355191088, -81.69247105943333, 0.5007225943710009], [41.48540355191088, -81.69052397829996, 0.4300407732117307], [41.48540355191088, -81.6885768971666, 0.3769261933756874], [41.48540355191088, -81.68662981603325, 0.32134189359711385], [41.48540355191088, -81.68468273489988, 0.27588562933660365], [41.48540355191088, -81.68273565376651, 0.23857684365047585], [41.48540355191088, -81.68078857263316, 0.20013144856771603], [41.48540355191088, -81.6788414914998, 0.16081051219013323], [41.48540355191088, -81.67689441036643, 0.13650704390095592], [41.48540355191088, -81.67494732923306, 0.11765826604260486], [41.48540355191088, -81.67300024809971, 0.09838752877294424], [41.48540355191088, -81.67105316696635, 0.07877752396038169], [41.48540355191088, -81.66910608583298, 0.058891638037611375], [41.48540355191088, -81.66715900469963, 0.03877900275965737], [41.48540355191088, -81.66521192356626, 0.018478127315579147], [41.48394001501539, -81.78982511610141, 0.4666879368121735], [41.48394001501539, -81.78787803496805, 0.42662924019691306], [41.48394001501539, -81.7859309538347, 0.38592217174069937], [41.48394001501539, -81.78398387270133, 0.34473604992501844], [41.48394001501539, -81.78203679156796, 0.30318567886833886], [41.48394001501539, -81.78008971043461, 0.2613520423282341], [41.48394001501539, -81.77814262930124, 0.21929397120711483], [41.48394001501539, -81.77619554816788, 0.17705522291639944], [41.48394001501539, -81.77424846703452, 0.13466899417897973], [41.48394001501539, -81.77230138590116, 0.09216090400383842], [41.48394001501539, -81.77035430476779, 0.049551022676830626], [41.48394001501539, -81.76840722363443, 0.021488978451929663], [41.48394001501539, -81.76646014250107, 0.0003968649906434527], [41.48394001501539, -81.7294656009672, 0.01235072939356491], [41.48394001501539, -81.72751851983384, 0.03405337643501798], [41.48394001501539, -81.72557143870047, 0.07541080269790724], [41.48394001501539, -81.72362435756712, 0.11787004701354488], [41.48394001501539, -81.72167727643375, 0.17738734382692847], [41.48394001501539, -81.71973019530039, 0.24267322153265247], [41.48394001501539, -81.71778311416703, 0.3203740404664442], [41.48394001501539, -81.71583603303367, 0.4021952842769193], [41.48394001501539, -81.7138889519003, 0.48954463357349154], [41.48394001501539, -81.71194187076695, 0.5771232860858665], [41.48394001501539, -81.70999478963358, 0.6905108364273119], [41.48394001501539, -81.70804770850022, 0.7963726940586396], [41.48394001501539, -81.70610062736685, 0.9074408577354918], [41.48394001501539, -81.7041535462335, 0.983263934489562], [41.48394001501539, -81.70220646510013, 0.923396907188486], [41.48394001501539, -81.70025938396677, 0.836845074852558], [41.48394001501539, -81.69831230283341, 0.7427309411546001], [41.48394001501539, -81.69636522170005, 0.6499881076516587], [41.48394001501539, -81.69441814056668, 0.5867470032707663], [41.48394001501539, -81.69247105943333, 0.5185193946785956], [41.48394001501539, -81.69052397829996, 0.4474945473194903], [41.48394001501539, -81.6885768971666, 0.3930804469533849], [41.48394001501539, -81.68662981603325, 0.33608745420211505], [41.48394001501539, -81.68468273489988, 0.29124106788207904], [41.48394001501539, -81.68273565376651, 0.2525211035163594], [41.48394001501539, -81.68078857263316, 0.21283496285324383], [41.48394001501539, -81.6788414914998, 0.17243357124697123], [41.48394001501539, -81.67689441036643, 0.14692831932159967], [41.48394001501539, -81.67494732923306, 0.12728082108183322], [41.48394001501539, -81.67300024809971, 0.10731273716008953], [41.48394001501539, -81.67105316696635, 0.087091056153324], [41.48394001501539, -81.66910608583298, 0.06666587420986864], [41.48394001501539, -81.66715900469963, 0.04607524520457987], [41.48394001501539, -81.66521192356626, 0.02534850266942479], [41.48394001501539, -81.6632648424329, 0.004508568036679013], [41.4824764781199, -81.78982511610141, 0.4709705688983459], [41.4824764781199, -81.78787803496805, 0.4309559260141454], [41.4824764781199, -81.7859309538347, 0.39015446140107596], [41.4824764781199, -81.78398387270133, 0.3488127809788966], [41.4824764781199, -81.78203679156796, 0.3070833777740575], [41.4824764781199, -81.78008971043461, 0.2650658962516333], [41.4824764781199, -81.77814262930124, 0.22282834372738525], [41.4824764781199, -81.77619554816788, 0.18041879248079168], [41.4824764781199, -81.77424846703452, 0.13787221934215538], [41.4824764781199, -81.77230138590116, 0.09521469733993397], [41.4824764781199, -81.77035430476779, 0.0524660678818385], [41.4824764781199, -81.76840722363443, 0.02621245803120505], [41.4824764781199, -81.76646014250107, 0.004885298562360483], [41.4824764781199, -81.7294656009672, 0.010958119325999934], [41.4824764781199, -81.72751851983384, 0.03655957551852294], [41.4824764781199, -81.72557143870047, 0.07930430809398181], [41.4824764781199, -81.72362435756712, 0.12195013242566616], [41.4824764781199, -81.72167727643375, 0.1770017023515943], [41.4824764781199, -81.71973019530039, 0.2549134105258741], [41.4824764781199, -81.71778311416703, 0.3353319218207974], [41.4824764781199, -81.71583603303367, 0.41615161446656046], [41.4824764781199, -81.7138889519003, 0.5034249756694839], [41.4824764781199, -81.71194187076695, 0.5848616478166487], [41.4824764781199, -81.70999478963358, 0.6800469345086672], [41.4824764781199, -81.70804770850022, 0.7709603381669808], [41.4824764781199, -81.70610062736685, 0.8490632363397523], [41.4824764781199, -81.7041535462335, 0.8922851402043344], [41.4824764781199, -81.70220646510013, 0.8686242124823941], [41.4824764781199, -81.70025938396677, 0.8074014591935297], [41.4824764781199, -81.69831230283341, 0.7274191951788295], [41.4824764781199, -81.69636522170005, 0.6518938540983743], [41.4824764781199, -81.69441814056668, 0.5923361485825809], [41.4824764781199, -81.69247105943333, 0.5255586218988616], [41.4824764781199, -81.69052397829996, 0.4582267308634522], [41.4824764781199, -81.6885768971666, 0.4027423151719257], [41.4824764781199, -81.68662981603325, 0.34459025137487553], [41.4824764781199, -81.68468273489988, 0.30270320456570093], [41.4824764781199, -81.68273565376651, 0.26271821897713415], [41.4824764781199, -81.68078857263316, 0.2219678989098917], [41.4824764781199, -81.6788414914998, 0.1806727953325078], [41.4824764781199, -81.67689441036643, 0.15568157086676654], [41.4824764781199, -81.67494732923306, 0.13531123442810666], [41.4824764781199, -81.67300024809971, 0.11472288413419066], [41.4824764781199, -81.67105316696635, 0.09396464604668803], [41.4824764781199, -81.66910608583298, 0.0730717054550513], [41.4824764781199, -81.66715900469963, 0.05207030870993118], [41.4824764781199, -81.66521192356626, 0.03098039106120169], [41.4824764781199, -81.6632648424329, 0.009817341994204067], [41.48101294122441, -81.78982511610141, 0.4693332657874393], [41.48101294122441, -81.78787803496805, 0.4299339500912937], [41.48101294122441, -81.7859309538347, 0.3895449668307601], [41.48101294122441, -81.78398387270133, 0.3484839871810231], [41.48101294122441, -81.78203679156796, 0.30694877927994463], [41.48101294122441, -81.78008971043461, 0.2650676306295299], [41.48101294122441, -81.77814262930124, 0.2229269094929806], [41.48101294122441, -81.77619554816788, 0.1805866906730913], [41.48101294122441, -81.77424846703452, 0.1380899629148809], [41.48101294122441, -81.77230138590116, 0.09546825696520853], [41.48101294122441, -81.77035430476779, 0.05274520296847818], [41.48101294122441, -81.76840722363443, 0.02981251945718272], [41.48101294122441, -81.76646014250107, 0.00830265412564978], [41.48101294122441, -81.7294656009672, 0.007907638975774877], [41.48101294122441, -81.72751851983384, 0.037269899388074325], [41.48101294122441, -81.72557143870047, 0.07996691471226158], [41.48101294122441, -81.72362435756712, 0.12253966508664056], [41.48101294122441, -81.72167727643375, 0.17230722069732626], [41.48101294122441, -81.71973019530039, 0.2558024664623486], [41.48101294122441, -81.71778311416703, 0.33814038736657526], [41.48101294122441, -81.71583603303367, 0.41791841238922517], [41.48101294122441, -81.7138889519003, 0.5046773173738005], [41.48101294122441, -81.71194187076695, 0.5695578210069073], [41.48101294122441, -81.70999478963358, 0.6403027669997294], [41.48101294122441, -81.70804770850022, 0.7104925343255352], [41.48101294122441, -81.70610062736685, 0.7617681637414729], [41.48101294122441, -81.7041535462335, 0.797175751911523], [41.48101294122441, -81.70220646510013, 0.7901241474769749], [41.48101294122441, -81.70025938396677, 0.7497432040265799], [41.48101294122441, -81.69831230283341, 0.6917386857247466], [41.48101294122441, -81.69636522170005, 0.6413432307636487], [41.48101294122441, -81.69441814056668, 0.5871287783274203], [41.48101294122441, -81.69247105943333, 0.5224359236003571], [41.48101294122441, -81.69052397829996, 0.4619947923761464], [41.48101294122441, -81.6885768971666, 0.4054734097798791], [41.48101294122441, -81.68662981603325, 0.34995932164851046], [41.48101294122441, -81.68468273489988, 0.30978177365966975], [41.48101294122441, -81.68273565376651, 0.26877766028775096], [41.48101294122441, -81.68078857263316, 0.22722404654285602], [41.48101294122441, -81.6788414914998, 0.18528841694030032], [41.48101294122441, -81.67689441036643, 0.16255928390736415], [41.48101294122441, -81.67494732923306, 0.14158422920351801], [41.48101294122441, -81.67300024809971, 0.12048494576417562], [41.48101294122441, -81.67105316696635, 0.09929008364990274], [41.48101294122441, -81.66910608583298, 0.07802019313849451], [41.48101294122441, -81.66715900469963, 0.05669037416243821], [41.48101294122441, -81.66521192356626, 0.03531195772719772], [41.48101294122441, -81.6632648424329, 0.013893605242516099], [41.47954940432892, -81.78982511610141, 0.4623117199487633], [41.47954940432892, -81.78787803496805, 0.4238918683612525], [41.47954940432892, -81.7859309538347, 0.3842996050441407], [41.47954940432892, -81.78398387270133, 0.3438822734913633], [41.47954940432892, -81.78203679156796, 0.30286960775853616], [41.47954940432892, -81.78008971043461, 0.261416734680468], [41.47954940432892, -81.77814262930124, 0.21963091120909292], [41.47954940432892, -81.77619554816788, 0.17758807028946091], [41.47954940432892, -81.77424846703452, 0.13534318299205686], [41.47954940432892, -81.77230138590116, 0.09293687182864956], [41.47954940432892, -81.77035430476779, 0.05388574854670165], [41.47954940432892, -81.76840722363443, 0.03225863553468495], [41.47954940432892, -81.76646014250107, 0.010622730420706139], [41.47954940432892, -81.7294656009672, 0.0032518962255328136], [41.47954940432892, -81.72751851983384, 0.03499899380305328], [41.47954940432892, -81.72557143870047, 0.07743596629586023], [41.47954940432892, -81.72362435756712, 0.11969300843318244], [41.47954940432892, -81.72167727643375, 0.1646061933994797], [41.47954940432892, -81.71973019530039, 0.24388779805805658], [41.47954940432892, -81.71778311416703, 0.32528111432711637], [41.47954940432892, -81.71583603303367, 0.4049746675170779], [41.47954940432892, -81.7138889519003, 0.4830157002673402], [41.47954940432892, -81.71194187076695, 0.5363092302227904], [41.47954940432892, -81.70999478963358, 0.5868798528748305], [41.47954940432892, -81.70804770850022, 0.6355272667034699], [41.47954940432892, -81.70610062736685, 0.6669915762238584], [41.47954940432892, -81.7041535462335, 0.6981077207725103], [41.47954940432892, -81.70220646510013, 0.7015922052463267], [41.47954940432892, -81.70025938396677, 0.6842874985808648], [41.47954940432892, -81.69831230283341, 0.6533857014766822], [41.47954940432892, -81.69636522170005, 0.6212142749822623], [41.47954940432892, -81.69441814056668, 0.5730798040154061], [41.47954940432892, -81.69247105943333, 0.5118177707194582], [41.47954940432892, -81.69052397829996, 0.45811629078151056], [41.47954940432892, -81.6885768971666, 0.40058512137134694], [41.47954940432892, -81.68662981603325, 0.3530517828571207], [41.47954940432892, -81.68468273489988, 0.31195895406748625], [41.47954940432892, -81.68273565376651, 0.2703283762623042], [41.47954940432892, -81.68078857263316, 0.2283350202822168], [41.47954940432892, -81.6788414914998, 0.18872485151033971], [41.47954940432892, -81.67689441036643, 0.16737385256645326], [41.47954940432892, -81.67494732923306, 0.1459545677062831], [41.47954940432892, -81.67300024809971, 0.12448460038248207], [41.47954940432892, -81.67105316696635, 0.10297600678991889], [41.47954940432892, -81.66910608583298, 0.08143731356079766], [41.47954940432892, -81.66715900469963, 0.059874717318869085], [41.47954940432892, -81.66521192356626, 0.038292827511308435], [41.47954940432892, -81.6632648424329, 0.016695142781586677], [41.47808586743343, -81.78982511610141, 0.45039643593066364], [41.47808586743343, -81.78787803496805, 0.4132069432406273], [41.47808586743343, -81.7859309538347, 0.37469975737237243], [41.47808586743343, -81.78398387270133, 0.33521692282975046], [41.47808586743343, -81.78203679156796, 0.2950028737851667], [41.47808586743343, -81.78008971043461, 0.2542325646706747], [41.47808586743343, -81.77814262930124, 0.2130324147365343], [41.47808586743343, -81.77619554816788, 0.17149498988178027], [41.47808586743343, -81.77424846703452, 0.12968907005452857], [41.47808586743343, -81.77230138590116, 0.08766652703759387], [41.47808586743343, -81.77035430476779, 0.05523043137560481], [41.47808586743343, -81.76840722363443, 0.033529432642556305], [41.47808586743343, -81.76646014250107, 0.011827251915474313], [41.47808586743343, -81.72751851983384, 0.02981310103410235], [41.47808586743343, -81.72557143870047, 0.07179741336644638], [41.47808586743343, -81.72362435756712, 0.11352370586724049], [41.47808586743343, -81.72167727643375, 0.15491965993174123], [41.47808586743343, -81.71973019530039, 0.21922879119544816], [41.47808586743343, -81.71778311416703, 0.2961680767197196], [41.47808586743343, -81.71583603303367, 0.3681752951785418], [41.47808586743343, -81.7138889519003, 0.4285001560475357], [41.47808586743343, -81.71194187076695, 0.4792681958717411], [41.47808586743343, -81.70999478963358, 0.5224313847516996], [41.47808586743343, -81.70804770850022, 0.5557950830976384], [41.47808586743343, -81.70610062736685, 0.5863682227729775], [41.47808586743343, -81.7041535462335, 0.6152783313558193], [41.47808586743343, -81.70220646510013, 0.6248374604691517], [41.47808586743343, -81.70025938396677, 0.6221442615762913], [41.47808586743343, -81.69831230283341, 0.6125318395259325], [41.47808586743343, -81.69636522170005, 0.5925326483799257], [41.47808586743343, -81.69441814056668, 0.5514791459186202], [41.47808586743343, -81.69247105943333, 0.5004688571992378], [41.47808586743343, -81.69052397829996, 0.44492414874953606], [41.47808586743343, -81.6885768971666, 0.3909433581934401], [41.47808586743343, -81.68662981603325, 0.350112853684434], [41.47808586743343, -81.68468273489988, 0.3087791642528262], [41.47808586743343, -81.68273565376651, 0.26708289659145956], [41.47808586743343, -81.68078857263316, 0.22511303485849932], [41.47808586743343, -81.6788414914998, 0.19163567823456082], [41.47808586743343, -81.67689441036643, 0.16997897896318892], [41.47808586743343, -81.67494732923306, 0.148311565003186], [41.47808586743343, -81.67300024809971, 0.12663625491758818], [41.47808586743343, -81.67105316696635, 0.10495495898305865], [41.47808586743343, -81.66910608583298, 0.08326901759157236], [41.47808586743343, -81.66715900469963, 0.06157939891810575], [41.47808586743343, -81.66521192356626, 0.039886819683532436], [41.47808586743343, -81.6632648424329, 0.01819182178381884], [41.476622330537936, -81.78982511610141, 0.43400969538391687], [41.476622330537936, -81.78787803496805, 0.3982593258133307], [41.476622330537936, -81.7859309538347, 0.3610628869182009], [41.476622330537936, -81.78398387270133, 0.32274511789976257], [41.476622330537936, -81.78203679156796, 0.283554863020832], [41.476622330537936, -81.78008971043461, 0.24368058972083287], [41.476622330537936, -81.77814262930124, 0.203264816883605], [41.476622330537936, -81.77619554816788, 0.16241579069293602], [41.476622330537936, -81.77424846703452, 0.12121636126415519], [41.476622330537936, -81.77230138590116, 0.0797305391994806], [41.476622330537936, -81.77035430476779, 0.055319979025351115], [41.476622330537936, -81.76840722363443, 0.03361359933629698], [41.476622330537936, -81.76646014250107, 0.011906571090556064], [41.476622330537936, -81.72751851983384, 0.021811925347007162], [41.476622330537936, -81.72557143870047, 0.0631759236176912], [41.476622330537936, -81.72362435756712, 0.10418955349747114], [41.476622330537936, -81.72167727643375, 0.1447623937828185], [41.476622330537936, -81.71973019530039, 0.19265024406206677], [41.476622330537936, -81.71778311416703, 0.25513917021156834], [41.476622330537936, -81.71583603303367, 0.3200840097993956], [41.476622330537936, -81.7138889519003, 0.3749546244086144], [41.476622330537936, -81.71194187076695, 0.41731828056286], [41.476622330537936, -81.70999478963358, 0.4521408621930349], [41.476622330537936, -81.70804770850022, 0.48318070370531957], [41.476622330537936, -81.70610062736685, 0.5150185814244534], [41.476622330537936, -81.7041535462335, 0.5419306066816677], [41.476622330537936, -81.70220646510013, 0.5576219974714585], [41.476622330537936, -81.70025938396677, 0.5625571861234824], [41.476622330537936, -81.69831230283341, 0.557883623513338], [41.476622330537936, -81.69636522170005, 0.5461329982347123], [41.476622330537936, -81.69441814056668, 0.5238073302827887], [41.476622330537936, -81.69247105943333, 0.47414016227065153], [41.476622330537936, -81.69052397829996, 0.4202473475979259], [41.476622330537936, -81.6885768971666, 0.38075191990024715], [41.476622330537936, -81.68662981603325, 0.3406585022189023], [41.476622330537936, -81.68468273489988, 0.30000574325140655], [41.476622330537936, -81.68273565376651, 0.25892186517621674], [41.476622330537936, -81.68078857263316, 0.21749801428120472], [41.476622330537936, -81.6788414914998, 0.19198401764882944], [41.476622330537936, -81.67689441036643, 0.17028977314734445], [41.476622330537936, -81.67494732923306, 0.14859198285476727], [41.476622330537936, -81.67300024809971, 0.12689158179648907], [41.476622330537936, -81.67105316696635, 0.10518920287463755], [41.476622330537936, -81.66910608583298, 0.08348528975418633], [41.476622330537936, -81.66715900469963, 0.06178016266043737], [41.476622330537936, -81.66521192356626, 0.040074058511631344], [41.476622330537936, -81.6632648424329, 0.01836715635289596], [41.47515879364245, -81.78982511610141, 0.41356120973095684], [41.47515879364245, -81.78787803496805, 0.3794333478125737], [41.47515879364245, -81.7859309538347, 0.343726705547298], [41.47515879364245, -81.78398387270133, 0.3067536651550973], [41.47515879364245, -81.78203679156796, 0.26876516657765986], [41.47515879364245, -81.78008971043461, 0.2299596851104378], [41.47515879364245, -81.77814262930124, 0.1904931080573384], [41.47515879364245, -81.77619554816788, 0.1504877386197152], [41.47515879364245, -81.77424846703452, 0.11003979478969582], [41.47515879364245, -81.77230138590116, 0.07578806233829796], [41.47515879364245, -81.77035430476779, 0.054153494644445764], [41.47515879364245, -81.76840722363443, 0.03251038219101859], [41.47515879364245, -81.76646014250107, 0.010860049562990415], [41.47515879364245, -81.72751851983384, 0.011291625186923641], [41.47515879364245, -81.72557143870047, 0.05172419310215128], [41.47515879364245, -81.72362435756712, 0.09187763690173192], [41.47515879364245, -81.72167727643375, 0.13147563164961573], [41.47515879364245, -81.71973019530039, 0.17038144103528102], [41.47515879364245, -81.71778311416703, 0.21434880225025427], [41.47515879364245, -81.71583603303367, 0.2658546648781457], [41.47515879364245, -81.7138889519003, 0.3168115313143385], [41.47515879364245, -81.71194187076695, 0.357792762901245], [41.47515879364245, -81.70999478963358, 0.38886117212087473], [41.47515879364245, -81.70804770850022, 0.41951021740303296], [41.47515879364245, -81.70610062736685, 0.4489134708978116], [41.47515879364245, -81.7041535462335, 0.47290914215398194], [41.47515879364245, -81.70220646510013, 0.48844130237414457], [41.47515879364245, -81.70025938396677, 0.4977687470418498], [41.47515879364245, -81.69831230283341, 0.5001502969824633], [41.47515879364245, -81.69636522170005, 0.49319327075793423], [41.47515879364245, -81.69441814056668, 0.47076117033087805], [41.47515879364245, -81.69247105943333, 0.43214521454347954], [41.47515879364245, -81.69052397829996, 0.3990589679501279], [41.47515879364245, -81.6885768971666, 0.3627846732724183], [41.47515879364245, -81.68662981603325, 0.3248130437552488], [41.47515879364245, -81.68468273489988, 0.28576454490633985], [41.47515879364245, -81.68273565376651, 0.24595931450154204], [41.47515879364245, -81.68078857263316, 0.21114751392802172], [41.47515879364245, -81.6788414914998, 0.18975531640814025], [41.47515879364245, -81.67689441036643, 0.16829582406788693], [41.47515879364245, -81.67494732923306, 0.14678812535862576], [41.47515879364245, -81.67300024809971, 0.12524473701568747], [41.47515879364245, -81.67105316696635, 0.10367419989739216], [41.47515879364245, -81.66910608583298, 0.08208253759842983], [41.47515879364245, -81.66715900469963, 0.06047411822070373], [41.47515879364245, -81.66521192356626, 0.03885218547794673], [41.47515879364245, -81.6632648424329, 0.017219198009363598], [41.47369525674696, -81.78982511610141, 0.3894927164075847], [41.47369525674696, -81.78787803496805, 0.35712850628397], [41.47369525674696, -81.7859309538347, 0.32304384494300936], [41.47369525674696, -81.78398387270133, 0.287547776580112], [41.47369525674696, -81.78203679156796, 0.25089462771081306], [41.47369525674696, -81.78008971043461, 0.2132912746055136], [41.47369525674696, -81.77814262930124, 0.1749047922417195], [41.47369525674696, -81.77619554816788, 0.1358696944410123], [41.47369525674696, -81.77424846703452, 0.09629429067183087], [41.47369525674696, -81.77230138590116, 0.07323132993093649], [41.47369525674696, -81.77035430476779, 0.05174260796639712], [41.47369525674696, -81.76840722363443, 0.03022961921079509], [41.47369525674696, -81.76646014250107, 0.008696083570629929], [41.47369525674696, -81.72751851983384, 0.008872877516540385], [41.47369525674696, -81.72557143870047, 0.03761304737333792], [41.47369525674696, -81.72362435756712, 0.0767915799545984], [41.47369525674696, -81.72167727643375, 0.11530198304434817], [41.47369525674696, -81.71973019530039, 0.1529969191152156], [41.47369525674696, -81.71778311416703, 0.18969189363304503], [41.47369525674696, -81.71583603303367, 0.2251576631898227], [41.47369525674696, -81.7138889519003, 0.2591138548506381], [41.47369525674696, -81.71194187076695, 0.3009090808075938], [41.47369525674696, -81.70999478963358, 0.3386468984548043], [41.47369525674696, -81.70804770850022, 0.37154639020755376], [41.47369525674696, -81.70610062736685, 0.3989937112705099], [41.47369525674696, -81.7041535462335, 0.4204701833684118], [41.47369525674696, -81.70220646510013, 0.43554814142338966], [41.47369525674696, -81.70025938396677, 0.44375166971441904], [41.47369525674696, -81.69831230283341, 0.4441900075334343], [41.47369525674696, -81.69636522170005, 0.43504513831714214], [41.47369525674696, -81.69441814056668, 0.41921186180008196], [41.47369525674696, -81.69247105943333, 0.39865374998171593], [41.47369525674696, -81.69052397829996, 0.3707507947158232], [41.47369525674696, -81.6885768971666, 0.3384006953779774], [41.47369525674696, -81.68662981603325, 0.30335272218796233], [41.47369525674696, -81.68468273489988, 0.26655524095883787], [41.47369525674696, -81.68273565376651, 0.22854394677821013], [41.47369525674696, -81.68078857263316, 0.20583184246551314], [41.47369525674696, -81.6788414914998, 0.18504086567572847], [41.47369525674696, -81.67689441036643, 0.1640628748430285], [41.47369525674696, -81.67494732923306, 0.14294886084858385], [41.47369525674696, -81.67300024809971, 0.12173301086373364], [41.47369525674696, -81.67105316696635, 0.10043903989793877], [41.47369525674696, -81.66910608583298, 0.07908388423214503], [41.47369525674696, -81.66715900469963, 0.057679945793568076], [41.47369525674696, -81.66521192356626, 0.03623650564585462], [41.47369525674696, -81.6632648424329, 0.01476064257164059], [41.472231719851465, -81.78982511610141, 0.3622799518483759], [41.472231719851465, -81.78787803496805, 0.33175843130602367], [41.472231719851465, -81.7859309538347, 0.2993757537619612], [41.472231719851465, -81.78398387270133, 0.26544203954536705], [41.472231719851465, -81.78203679156796, 0.23021554066538655], [41.472231719851465, -81.78008971043461, 0.19391006027605281], [41.472231719851465, -81.77814262930124, 0.15670173030325987], [41.472231719851465, -81.77619554816788, 0.11873522082910815], [41.472231719851465, -81.77424846703452, 0.09060016590667379], [41.472231719851465, -81.77230138590116, 0.06938347432655992], [41.472231719851465, -81.77035430476779, 0.04811090474709613], [41.472231719851465, -81.76840722363443, 0.026791307406437696], [41.472231719851465, -81.76646014250107, 0.005431771479157201], [41.472231719851465, -81.72751851983384, 0.005190028409546042], [41.472231719851465, -81.72557143870047, 0.026446355005018702], [41.472231719851465, -81.72362435756712, 0.0591417658285835], [41.472231719851465, -81.72167727643375, 0.09648549974144043], [41.472231719851465, -81.71973019530039, 0.13290060393002845], [41.472231719851465, -81.71778311416703, 0.1682002097668231], [41.472231719851465, -81.71583603303367, 0.20215946470433513], [41.472231719851465, -81.7138889519003, 0.23451220910909765], [41.472231719851465, -81.71194187076695, 0.26495084741145936], [41.472231719851465, -81.70999478963358, 0.2931309264240867], [41.472231719851465, -81.70804770850022, 0.3205717577975069], [41.472231719851465, -81.70610062736685, 0.3459990539850504], [41.472231719851465, -81.7041535462335, 0.3657113131457059], [41.472231719851465, -81.70220646510013, 0.3792010073205153], [41.472231719851465, -81.70025938396677, 0.38602111250677384], [41.472231719851465, -81.69831230283341, 0.39104568338433887], [41.472231719851465, -81.69636522170005, 0.38924865462538166], [41.472231719851465, -81.69441814056668, 0.3795598567004101], [41.472231719851465, -81.69247105943333, 0.36204277598351453], [41.472231719851465, -81.69052397829996, 0.33805483308782697], [41.472231719851465, -81.6885768971666, 0.30935497643712284], [41.472231719851465, -81.68662981603325, 0.27737943548269517], [41.472231719851465, -81.68468273489988, 0.24311065561071055], [41.472231719851465, -81.68273565376651, 0.21746967447805576], [41.472231719851465, -81.68078857263316, 0.19797921279129102], [41.472231719851465, -81.6788414914998, 0.1780202134177601], [41.472231719851465, -81.67689441036643, 0.1577225094372982], [41.472231719851465, -81.67494732923306, 0.1371732685966412], [41.472231719851465, -81.67300024809971, 0.11643274907770916], [41.472231719851465, -81.67105316696635, 0.0955437291285912], [41.472231719851465, -81.66910608583298, 0.07453731009900076], [41.472231719851465, -81.66715900469963, 0.05343658928114533], [41.472231719851465, -81.66521192356626, 0.032259047471887056], [41.472231719851465, -81.6632648424329, 0.01101814003259198], [41.47076818295598, -81.78982511610141, 0.33240400009359067], [41.47076818295598, -81.78787803496805, 0.3037363091552333], [41.47076818295598, -81.7859309538347, 0.27308223924999486], [41.47076818295598, -81.78398387270133, 0.24075103032509593], [41.47076818295598, -81.78203679156796, 0.2070028156132734], [41.47076818295598, -81.78008971043461, 0.17205589083613412], [41.47076818295598, -81.77814262930124, 0.13609290073594046], [41.47076818295598, -81.77619554816788, 0.10598471370960746], [41.47076818295598, -81.77424846703452, 0.08518835501794719], [41.47076818295598, -81.77230138590116, 0.06428527955204313], [41.47076818295598, -81.77035430476779, 0.04329280510603866], [41.47076818295598, -81.76840722363443, 0.022224748024768166], [41.47076818295598, -81.76646014250107, 0.001092253493415395], [41.47076818295598, -81.72751851983384, 0.00028047455443075636], [41.47076818295598, -81.72557143870047, 0.02124110745039913], [41.47076818295598, -81.72362435756712, 0.04210483403866301], [41.47076818295598, -81.72167727643375, 0.07526477598941929], [41.47076818295598, -81.71973019530039, 0.11036103209706012], [41.47076818295598, -81.71778311416703, 0.14424086277728124], [41.47076818295598, -81.71583603303367, 0.17668557200307655], [41.47076818295598, -81.7138889519003, 0.2074420313261079], [41.47076818295598, -81.71194187076695, 0.23622269822499017], [41.47076818295598, -81.70999478963358, 0.26270771811515853], [41.47076818295598, -81.70804770850022, 0.2865476611372684], [41.47076818295598, -81.70610062736685, 0.30736269849855663], [41.47076818295598, -81.7041535462335, 0.3247310679017133], [41.47076818295598, -81.70220646510013, 0.3381599736266338], [41.47076818295598, -81.70025938396677, 0.3470433852671975], [41.47076818295598, -81.69831230283341, 0.3506453735193437], [41.47076818295598, -81.69636522170005, 0.3482007218289344], [41.47076818295598, -81.69441814056668, 0.33921056163982505], [41.47076818295598, -81.69247105943333, 0.323789837876781], [41.47076818295598, -81.69052397829996, 0.3027114253717755], [41.47076818295598, -81.6885768971666, 0.2770781918022877], [41.47076818295598, -81.68662981603325, 0.24795799283618727], [41.47076818295598, -81.68468273489988, 0.22363262933259642], [41.47076818295598, -81.68273565376651, 0.2062262823831851], [41.47076818295598, -81.68078857263316, 0.18791096404193314], [41.47076818295598, -81.6788414914998, 0.16893038663914517], [41.47076818295598, -81.67689441036643, 0.14945338222375762], [41.47076818295598, -81.67494732923306, 0.12959873322242352], [41.47076818295598, -81.67300024809971, 0.10945153752998231], [41.47076818295598, -81.67105316696635, 0.08907390323124902], [41.47076818295598, -81.66910608583298, 0.06851198049046818], [41.47076818295598, -81.66715900469963, 0.04780064503617529], [41.47076818295598, -81.66521192356626, 0.026966667259913354], [41.47076818295598, -81.6632648424329, 0.006030892907352336], [41.469304646060486, -81.78982511610141, 0.3003169096085865], [41.469304646060486, -81.78787803496805, 0.2734553823888811], [41.469304646060486, -81.7859309538347, 0.24450881543966993], [41.469304646060486, -81.78398387270133, 0.21377969277716763], [41.469304646060486, -81.78203679156796, 0.18152584856574455], [41.469304646060486, -81.78008971043461, 0.14796660363510938], [41.469304646060486, -81.77814262930124, 0.11908990019527406], [41.469304646060486, -81.77619554816788, 0.09889390908817368], [41.469304646060486, -81.77424846703452, 0.07851674030561984], [41.469304646060486, -81.77230138590116, 0.057988187833559156], [41.469304646060486, -81.77035430476779, 0.03733201107459046], [41.469304646060486, -81.76840722363443, 0.016567352120171124], [41.469304646060486, -81.72557143870047, 0.014797200897163985], [41.469304646060486, -81.72362435756712, 0.03526396521481017], [41.469304646060486, -81.72167727643375, 0.05556535864802522], [41.469304646060486, -81.71973019530039, 0.08563148220171808], [41.469304646060486, -81.71778311416703, 0.11809141699900576], [41.469304646060486, -81.71583603303367, 0.14903691242315473], [41.469304646060486, -81.7138889519003, 0.17822712729190213], [41.469304646060486, -81.71194187076695, 0.20539160515381377], [41.469304646060486, -81.70999478963358, 0.23023082757153435], [41.469304646060486, -81.70804770850022, 0.25241636047487753], [41.469304646060486, -81.70610062736685, 0.27158838887911724], [41.469304646060486, -81.7041535462335, 0.2873483825705315], [41.469304646060486, -81.70220646510013, 0.2992477670013031], [41.469304646060486, -81.70025938396677, 0.3067827275214812], [41.469304646060486, -81.69831230283341, 0.3094206255287723], [41.469304646060486, -81.69636522170005, 0.30669165625342315], [41.469304646060486, -81.69441814056668, 0.29834730302423146], [41.469304646060486, -81.69247105943333, 0.2845052897985203], [41.469304646060486, -81.69052397829996, 0.26566125041754945], [41.469304646060486, -81.6885768971666, 0.24254727306615267], [41.469304646060486, -81.68662981603325, 0.22364457474977414], [41.469304646060486, -81.68468273489988, 0.20907549211996868], [41.469304646060486, -81.68273565376651, 0.1930658538230973], [41.469304646060486, -81.68078857263316, 0.17596518503223368], [41.469304646060486, -81.6788414914998, 0.15803281161907265], [41.469304646060486, -81.67689441036643, 0.1394596378106392], [41.469304646060486, -81.67494732923306, 0.12038655445506949], [41.469304646060486, -81.67300024809971, 0.10091838817223242], [41.469304646060486, -81.67105316696635, 0.08113398738264949], [41.469304646060486, -81.66910608583298, 0.06109338068213639], [41.469304646060486, -81.66715900469963, 0.040842836121328364], [41.469304646060486, -81.66521192356626, 0.020418449497871735], [41.467841109165, -81.78982511610141, 0.2664179780178683], [41.467841109165, -81.78787803496805, 0.241272929668552], [41.467841109165, -81.7859309538347, 0.21397551617071103], [41.467841109165, -81.78398387270133, 0.18481484868229053], [41.467841109165, -81.78203679156796, 0.15404153296723552], [41.467841109165, -81.78008971043461, 0.12961685484601998], [41.467841109165, -81.77814262930124, 0.110229747466926], [41.467841109165, -81.77619554816788, 0.09056052263469024], [41.467841109165, -81.77424846703452, 0.0706555404232516], [41.467841109165, -81.77230138590116, 0.05055192879704886], [41.467841109165, -81.77035430476779, 0.030279677741873307], [41.467841109165, -81.76840722363443, 0.009863214468369855], [41.467841109165, -81.72557143870047, 0.007179955181321413], [41.467841109165, -81.72362435756712, 0.027197017655210966], [41.467841109165, -81.72167727643375, 0.046997264556921776], [41.467841109165, -81.71973019530039, 0.06653876932288051], [41.467841109165, -81.71778311416703, 0.09000776391403614], [41.467841109165, -81.71583603303367, 0.11948890914421735], [41.467841109165, -81.7138889519003, 0.14716300500710347], [41.467841109165, -81.71194187076695, 0.1727760788173463], [41.467841109165, -81.70999478963358, 0.19604878322588493], [41.467841109165, -81.70804770850022, 0.21667635089162723], [41.467841109165, -81.70610062736685, 0.23432772442351568], [41.467841109165, -81.7041535462335, 0.2486441135962681], [41.467841109165, -81.70220646510013, 0.25923998627795497], [41.467841109165, -81.70025938396677, 0.26571436587888636], [41.467841109165, -81.69831230283341, 0.2676847679312007], [41.467841109165, -81.69636522170005, 0.2648526177463916], [41.467841109165, -81.69441814056668, 0.25708905090891127], [41.467841109165, -81.69247105943333, 0.24450112373056093], [41.467841109165, -81.69052397829996, 0.2274334070246528], [41.467841109165, -81.6885768971666, 0.21750389851025764], [41.467841109165, -81.68662981603325, 0.20625095264464308], [41.467841109165, -81.68468273489988, 0.19307886049302508], [41.467841109165, -81.68273565376651, 0.17837542193016961], [41.467841109165, -81.68078857263316, 0.16246010500416314], [41.467841109165, -81.6788414914998, 0.1455863801040656], [41.467841109165, -81.67689441036643, 0.12795155631397], [41.467841109165, -81.67494732923306, 0.10970809221239289], [41.467841109165, -81.67300024809971, 0.09097376777702587], [41.467841109165, -81.67105316696635, 0.07183994982778197], [41.467841109165, -81.66910608583298, 0.0523779877214325], [41.467841109165, -81.66715900469963, 0.03264404576716593], [41.467841109165, -81.66521192356626, 0.012682717212564238], [41.46637757226951, -81.78982511610141, 0.23104435321360905], [41.46637757226951, -81.78787803496805, 0.20750144613093743], [41.46637757226951, -81.7859309538347, 0.1817695279494157], [41.46637757226951, -81.78398387270133, 0.15514617071124445], [41.46637757226951, -81.78203679156796, 0.13728690034254099], [41.46637757226951, -81.78008971043461, 0.11893635014470297], [41.46637757226951, -81.77814262930124, 0.10017658156702557], [41.46637757226951, -81.77619554816788, 0.0810736462901614], [41.46637757226951, -81.77424846703452, 0.06168097700700304], [41.46637757226951, -81.77230138590116, 0.042042051615940906], [41.46637757226951, -81.77035430476779, 0.022192470568099275], [41.46637757226951, -81.76840722363443, 0.002161572542217556], [41.46637757226951, -81.72362435756712, 0.0179873892850854], [41.46637757226951, -81.72167727643375, 0.03724572534821917], [41.46637757226951, -81.71973019530039, 0.056187013323067664], [41.46637757226951, -81.71778311416703, 0.07475099105411329], [41.46637757226951, -81.71583603303367, 0.09286283599016595], [41.46637757226951, -81.7138889519003, 0.1145141479503048], [41.46637757226951, -81.71194187076695, 0.13865771628283133], [41.46637757226951, -81.70999478963358, 0.16046300311513842], [41.46637757226951, -81.70804770850022, 0.17965172904050034], [41.46637757226951, -81.70610062736685, 0.19592671503094627], [41.46637757226951, -81.7041535462335, 0.2089748421755953], [41.46637757226951, -81.70220646510013, 0.21847429895421575], [41.46637757226951, -81.70025938396677, 0.22411066388512585], [41.46637757226951, -81.69831230283341, 0.2256066024569208], [41.46637757226951, -81.69636522170005, 0.22276556828711555], [41.46637757226951, -81.69441814056668, 0.21551980205697924], [41.46637757226951, -81.69247105943333, 0.21120187355282533], [41.46637757226951, -81.69052397829996, 0.2058843069393038], [41.46637757226951, -81.6885768971666, 0.19802588293783016], [41.46637757226951, -81.68662981603325, 0.18794873483315985], [41.46637757226951, -81.68468273489988, 0.17599176749584167], [41.46637757226951, -81.68273565376651, 0.16247391514364648], [41.46637757226951, -81.68078857263316, 0.14767501020249613], [41.46637757226951, -81.6788414914998, 0.1318300448196963], [41.46637757226951, -81.67689441036643, 0.11513122408618545], [41.46637757226951, -81.67494732923306, 0.09773348328091039], [41.46637757226951, -81.67300024809971, 0.07976088294922531], [41.46637757226951, -81.67105316696635, 0.061312614952474975], [41.46637757226951, -81.66910608583298, 0.042468138461183934], [41.46637757226951, -81.66715900469963, 0.023291362960455322], [41.46637757226951, -81.66521192356626, 0.0038339662863557666], [41.464914035374015, -81.78982511610141, 0.19447235130254328], [41.464914035374015, -81.78787803496805, 0.17392156013674773], [41.464914035374015, -81.7859309538347, 0.1582917657692002], [41.464914035374015, -81.78398387270133, 0.14187145607594975], [41.464914035374015, -81.78203679156796, 0.12478831213801415], [41.464914035374015, -81.78008971043461, 0.1071476277311283], [41.464914035374015, -81.77814262930124, 0.08903600179021345], [41.464914035374015, -81.77619554816788, 0.0705246667894811], [41.464914035374015, -81.77424846703452, 0.05167233494842315], [41.464914035374015, -81.77230138590116, 0.03252755911410933], [41.464914035374015, -81.77035430476779, 0.013130656487498631], [41.464914035374015, -81.72362435756712, 0.007721326104374796], [41.464914035374015, -81.72167727643375, 0.02641040612009076], [41.464914035374015, -81.71973019530039, 0.04472773460844663], [41.464914035374015, -81.71778311416703, 0.06260764610686403], [41.464914035374015, -81.71583603303367, 0.07997026127807953], [41.464914035374015, -81.7138889519003, 0.09671829678726382], [41.464914035374015, -81.71194187076695, 0.11273341837236082], [41.464914035374015, -81.70999478963358, 0.12787236441823782], [41.464914035374015, -81.70804770850022, 0.1419633838185522], [41.464914035374015, -81.70610062736685, 0.1566469932191501], [41.464914035374015, -81.7041535462335, 0.16859102764887243], [41.464914035374015, -81.70220646510013, 0.17716942462718324], [41.464914035374015, -81.70025938396677, 0.18340110978805088], [41.464914035374015, -81.69831230283341, 0.18877072023875088], [41.464914035374015, -81.69636522170005, 0.19169214070975046], [41.464914035374015, -81.69441814056668, 0.19204724009906982], [41.464914035374015, -81.69247105943333, 0.1898211531053701], [41.464914035374015, -81.69052397829996, 0.18510523972958384], [41.464914035374015, -81.6885768971666, 0.17807945062203395], [41.464914035374015, -81.68662981603325, 0.16898142118539686], [41.464914035374015, -81.68468273489988, 0.15807324832877528], [41.464914035374015, -81.68273565376651, 0.1456144488977097], [41.464914035374015, -81.68078857263316, 0.13184449897182882], [41.464914035374015, -81.6788414914998, 0.11697425697949185], [41.464914035374015, -81.67689441036643, 0.10118375416955595], [41.464914035374015, -81.67494732923306, 0.08462373542537785], [41.464914035374015, -81.67300024809971, 0.06741897776724468], [41.464914035374015, -81.67105316696635, 0.049672152510311894], [41.464914035374015, -81.66910608583298, 0.03146756791584311], [41.464914035374015, -81.66715900469963, 0.012874495127783873], [41.46345049847853, -81.78982511610141, 0.17176109671805456], [41.46345049847853, -81.78787803496805, 0.15798420851183548], [41.46345049847853, -81.7859309538347, 0.14322224866195507], [41.46345049847853, -81.78398387270133, 0.1276195899111854], [41.46345049847853, -81.78203679156796, 0.1112997935113816], [41.46345049847853, -81.78008971043461, 0.0943675423600103], [41.46345049847853, -81.77814262930124, 0.07691100673957653], [41.46345049847853, -81.77619554816788, 0.05900424393377677], [41.46345049847853, -81.77424846703452, 0.040709423756564674], [41.46345049847853, -81.77230138590116, 0.02207879121764721], [41.46345049847853, -81.77035430476779, 0.0031563454838482922], [41.46345049847853, -81.72167727643375, 0.014589385133586246], [41.46345049847853, -81.71973019530039, 0.03227241782136109], [41.46345049847853, -81.71778311416703, 0.04946523489548787], [41.46345049847853, -81.71583603303367, 0.06608564037830708], [41.46345049847853, -81.7138889519003, 0.08203577508204604], [41.46345049847853, -81.71194187076695, 0.09719963616013465], [41.46345049847853, -81.70999478963358, 0.11144082154579994], [41.46345049847853, -81.70804770850022, 0.12460105598637576], [41.46345049847853, -81.70610062736685, 0.13650038254579214], [41.46345049847853, -81.7041535462335, 0.14694024899622488], [41.46345049847853, -81.70220646510013, 0.15571090477833635], [41.46345049847853, -81.70025938396677, 0.1626042283860392], [41.46345049847853, -81.69831230283341, 0.16743195321500454], [41.46345049847853, -81.69636522170005, 0.17004715591384817], [41.46345049847853, -81.69441814056668, 0.17036446616476777], [41.46345049847853, -81.69247105943333, 0.16837323233065238], [41.46345049847853, -81.69052397829996, 0.16413923850442774], [41.46345049847853, -81.6885768971666, 0.15779436423405244], [41.46345049847853, -81.68662981603325, 0.1495177344060352], [41.46345049847853, -81.68468273489988, 0.13951404173797582], [41.46345049847853, -81.68273565376651, 0.12799410894402266], [41.46345049847853, -81.68078857263316, 0.11516050605671503], [41.46345049847853, -81.6788414914998, 0.10119874690861728], [41.46345049847853, -81.67689441036643, 0.08627316229261145], [41.46345049847853, -81.67494732923306, 0.07052605063205611], [41.46345049847853, -81.67300024809971, 0.05407879882258257], [41.46345049847853, -81.67105316696635, 0.03703399159282937], [41.46345049847853, -81.66910608583298, 0.01947787000702764], [41.46345049847853, -81.66715900469963, 0.0014827697589297033], [41.46198696158304, -81.78982511610141, 0.15423495023409703], [41.46198696158304, -81.78787803496805, 0.1412937304030898], [41.46198696158304, -81.7859309538347, 0.1273452138097976], [41.46198696158304, -81.78398387270133, 0.11252225993110944], [41.46198696158304, -81.78203679156796, 0.09694170027691604], [41.46198696158304, -81.78008971043461, 0.08070498357296421], [41.46198696158304, -81.77814262930124, 0.06389946995508762], [41.46198696158304, -81.77619554816788, 0.046600003724494916], [41.46198696158304, -81.77424846703452, 0.028870533144820448], [41.46198696158304, -81.77230138590116, 0.010765646583702625], [41.46198696158304, -81.72167727643375, 0.0018766537873072303], [41.46198696158304, -81.71973019530039, 0.018925942628241647], [41.46198696158304, -81.71778311416703, 0.03544017490340079], [41.46198696158304, -81.71583603303367, 0.05133711953359518], [41.46198696158304, -81.7138889519003, 0.06652093752101489], [41.46198696158304, -81.71194187076695, 0.08088068780604984], [41.46198696158304, -81.70999478963358, 0.09428930573346345], [41.46198696158304, -81.70804770850022, 0.10660352973823363], [41.46198696158304, -81.70610062736685, 0.11766542799858756], [41.46198696158304, -81.7041535462335, 0.12730629977496863], [41.46198696158304, -81.70220646510013, 0.1353536742136872], [41.46198696158304, -81.70025938396677, 0.14164174148627293], [41.46198696158304, -81.69831230283341, 0.14602471178769863], [41.46198696158304, -81.69636522170005, 0.1483913967524781], [41.46198696158304, -81.69441814056668, 0.14867817934231162], [41.46198696158304, -81.69247105943333, 0.1468771716573376], [41.46198696158304, -81.69052397829996, 0.14303726426962746], [41.46198696158304, -81.6885768971666, 0.13725775697205425], [41.46198696158304, -81.68662981603325, 0.1296764020628635], [41.46198696158304, -81.68468273489988, 0.12045494723834939], [41.46198696158304, -81.68273565376651, 0.10976521791713434], [41.46198696158304, -81.68078857263316, 0.09777778760062357], [41.46198696158304, -81.6788414914998, 0.08465404529371512], [41.46198696158304, -81.67689441036643, 0.07054150865783314], [41.46198696158304, -81.67494732923306, 0.05557172616660753], [41.46198696158304, -81.67300024809971, 0.03985998390517788], [41.46198696158304, -81.67105316696635, 0.023506122214999797], [41.46198696158304, -81.66910608583298, 0.006595937737687279], [41.460523424687544, -81.78982511610141, 0.13615041553356677], [41.460523424687544, -81.78787803496805, 0.12397344198481818], [41.460523424687544, -81.7859309538347, 0.11078123813716079], [41.460523424687544, -81.78398387270133, 0.09669443347767878], [41.460523424687544, -81.78203679156796, 0.08182168286413093], [41.460523424687544, -81.78008971043461, 0.06625945719522797], [41.460523424687544, -81.77814262930124, 0.05009253993401307], [41.460523424687544, -81.77619554816788, 0.033394924964452], [41.460523424687544, -81.77424846703452, 0.016230900355033804], [41.460523424687544, -81.71973019530039, 0.004785006908273774], [41.460523424687544, -81.71778311416703, 0.020637626703016106], [41.460523424687544, -81.71583603303367, 0.035837801631474896], [41.460523424687544, -81.7138889519003, 0.050293534795369375], [41.460523424687544, -81.71194187076695, 0.06390061156467697], [41.460523424687544, -81.70999478963358, 0.076542442798505], [41.460523424687544, -81.70804770850022, 0.08809084452546045], [41.460523424687544, -81.70610062736685, 0.09840819525127932], [41.460523424687544, -81.7041535462335, 0.10735141900356483], [41.460523424687544, -81.70220646510013, 0.11477811054488574], [41.460523424687544, -81.70025938396677, 0.12055478114190257], [41.460523424687544, -81.69831230283341, 0.12456664531935972], [41.460523424687544, -81.69636522170005, 0.12672769846126253], [41.460523424687544, -81.69441814056668, 0.12698930730808658], [41.460523424687544, -81.69247105943333, 0.1253454703069948], [41.460523424687544, -81.69052397829996, 0.12183348714958984], [41.460523424687544, -81.6885768971666, 0.11652987027436758], [41.460523424687544, -81.68662981603325, 0.10954249582834161], [41.460523424687544, -81.68468273489988, 0.1010007429773841], [41.460523424687544, -81.68273565376651, 0.09104547558118724], [41.460523424687544, -81.68078857263316, 0.07982028881052661], [41.460523424687544, -81.6788414914998, 0.0674647810228071], [41.460523424687544, -81.67689441036643, 0.054110005304905416], [41.460523424687544, -81.67494732923306, 0.039875854206038966], [41.460523424687544, -81.67300024809971, 0.02486994862297352], [41.460523424687544, -81.67105316696635, 0.009187578270356333], [41.45905988779206, -81.78982511610141, 0.11760454230790224], [41.45905988779206, -81.78787803496805, 0.10612446097209266], [41.45905988779206, -81.7859309538347, 0.09363187573502524], [41.45905988779206, -81.78398387270133, 0.0802353493753073], [41.45905988779206, -81.78203679156796, 0.06603476091466702], [41.45905988779206, -81.78008971043461, 0.051120577545774926], [41.45905988779206, -81.77814262930124, 0.03557379759392803], [41.45905988779206, -81.77619554816788, 0.01946633338613512], [41.45905988779206, -81.77424846703452, 0.00286165307505412], [41.45905988779206, -81.71778311416703, 0.005151251328691738], [41.45905988779206, -81.71583603303367, 0.019686276334174788], [41.45905988779206, -81.7138889519003, 0.03345549461868235], [41.45905988779206, -81.71194187076695, 0.04636226442020424], [41.45905988779206, -81.70999478963358, 0.05830070200691234], [41.45905988779206, -81.70804770850022, 0.06915692180423973], [41.45905988779206, -81.70610062736685, 0.07881139136048054], [41.45905988779206, -81.7041535462335, 0.08714263651396487], [41.45905988779206, -81.70220646510013, 0.0940323933153067], [41.45905988779206, -81.70025938396677, 0.09937204695650687], [41.45905988779206, -81.69831230283341, 0.10306984273096513], [41.45905988779206, -81.69636522170005, 0.10505798276110517], [41.45905988779206, -81.69441814056668, 0.1052984780261589], [41.45905988779206, -81.69247105943333, 0.1037866576736699], [41.45905988779206, -81.69052397829996, 0.10055161202882873], [41.45905988779206, -81.6885768971666, 0.09565347466206596], [41.45905988779206, -81.68662981603325, 0.08917811257964044], [41.45905988779206, -81.68468273489988, 0.08123025333577476], [41.45905988779206, -81.68273565376651, 0.07192620324095352], [41.45905988779206, -81.68078857263316, 0.061387129342927206], [41.45905988779206, -81.6788414914998, 0.04973352545298981], [41.45905988779206, -81.67689441036643, 0.037081111642136975], [41.45905988779206, -81.67494732923306, 0.023538128976119826], [41.45905988779206, -81.67300024809971, 0.00920382127496346], [41.457596350896566, -81.78982511610141, 0.09867485931730914], [41.457596350896566, -81.78787803496805, 0.0878295835379569], [41.457596350896566, -81.7859309538347, 0.07598225800323062], [41.457596350896566, -81.78398387270133, 0.06323004934735625], [41.457596350896566, -81.78203679156796, 0.04966403385272123], [41.457596350896566, -81.78008971043461, 0.03536819045165493], [41.457596350896566, -81.77814262930124, 0.02041898603768765], [41.457596350896566, -81.77619554816788, 0.004885387804379614], [41.457596350896566, -81.71583603303367, 0.0029677689284658454], [41.457596350896566, -81.7138889519003, 0.016093054170982755], [41.457596350896566, -81.71194187076695, 0.02835068142780802], [41.457596350896566, -81.70999478963358, 0.0396451363381413], [41.457596350896566, -81.70804770850022, 0.04987563408689193], [41.457596350896566, -81.70610062736685, 0.058938427328884914], [41.457596350896566, -81.7041535462335, 0.06673008828448436], [41.457596350896566, -81.70220646510013, 0.07315175216644709], [41.457596350896566, -81.70025938396677, 0.07811412713467238], [41.457596350896566, -81.69831230283341, 0.08154285452684501], [41.457596350896566, -81.69636522170005, 0.08338359815439639], [41.457596350896566, -81.69441814056668, 0.08360613171877243], [41.457596350896566, -81.69247105943333, 0.08220674955197116], [41.457596350896566, -81.69052397829996, 0.0792085689662089], [41.457596350896566, -81.6885768971666, 0.0746596683766667], [41.457596350896566, -81.68662981603325, 0.06862939908069972], [41.457596350896566, -81.68468273489988, 0.06120349663290074], [41.457596350896566, -81.68273565376651, 0.05247872599693171], [41.457596350896566, -81.68078857263316, 0.042557724685761356], [41.457596350896566, -81.6788414914998, 0.03154452101411823], [41.457596350896566, -81.67689441036643, 0.019540980775736353], [41.457596350896566, -81.67494732923306, 0.006644239192864937], [41.45613281400107, -81.78982511610141, 0.07942358508971865], [41.45613281400107, -81.78787803496805, 0.06915667919714302], [41.45613281400107, -81.7859309538347, 0.05790361936358814], [41.45613281400107, -81.78398387270133, 0.04575110121623976], [41.45613281400107, -81.78203679156796, 0.03278172967274386], [41.45613281400107, -81.78008971043461, 0.01907289385660186], [41.45613281400107, -81.77814262930124, 0.004696141241533484], [41.45613281400107, -81.71194187076695, 0.009936145179689023], [41.45613281400107, -81.70999478963358, 0.02064133263762342], [41.45613281400107, -81.70804770850022, 0.030305483321845645], [41.45613281400107, -81.70610062736685, 0.038838462437666386], [41.45613281400107, -81.7041535462335, 0.046151864134775164], [41.45613281400107, -81.70220646510013, 0.05216246975500259], [41.45613281400107, -81.70025938396677, 0.05679615091281632], [41.45613281400107, -81.69831230283341, 0.059991895113482366], [41.45613281400107, -81.69636522170005, 0.06170551872427422], [41.45613281400107, -81.69441814056668, 0.06191258613984365], [41.45613281400107, -81.69247105943333, 0.06061010856552321], [41.45613281400107, -81.69052397829996, 0.05781675595785153], [41.45613281400107, -81.6885768971666, 0.053571547969703405], [41.45613281400107, -81.68662981603325, 0.04793123163192373], [41.45613281400107, -81.68468273489988, 0.04096673827208313], [41.45613281400107, -81.68273565376651, 0.03275919675124878], [41.45613281400107, -81.68078857263316, 0.02339595921229526], [41.45613281400107, -81.6788414914998, 0.012966996721515937], [41.45613281400107, -81.67689441036643, 0.0015618879345728489], [41.45466927710559, -81.78982511610141, 0.05990094005840737], [41.45466927710559, -81.78787803496805, 0.05016153820488517], [41.45466927710559, -81.7859309538347, 0.03945557894022918], [41.45466927710559, -81.78398387270133, 0.02786030608232108], [41.45466927710559, -81.78203679156796, 0.015450388609065804], [41.45466927710559, -81.78008971043461, 0.0022967792792795466], [41.45466927710559, -81.70999478963358, 0.001342600854606616], [41.45466927710559, -81.70804770850022, 0.010493155545752699], [41.45466927710559, -81.70610062736685, 0.01855003310677314], [41.45466927710559, -81.7041535462335, 0.025437328987366874], [41.45466927710559, -81.70220646510013, 0.03108451094307107], [41.45466927710559, -81.70025938396677, 0.03542947217979444], [41.45466927710559, -81.69831230283341, 0.03842158743448759], [41.45466927710559, -81.69636522170005, 0.04002446559532019], [41.45466927710559, -81.69441814056668, 0.04021807638617045], [41.45466927710559, -81.69247105943333, 0.03899997447239693], [41.45466927710559, -81.69052397829996, 0.036385451524632094], [41.45466927710559, -81.6885768971666, 0.03240659468406646], [41.45466927710559, -81.68662981603325, 0.027110383114162938], [41.45466927710559, -81.68468273489988, 0.020556075510795035], [41.45466927710559, -81.68273565376651, 0.012812204984833682], [41.45466927710559, -81.68078857263316, 0.003953497574279551], [41.453205740210095, -81.78982511610141, 0.040147721170108376], [41.453205740210095, -81.78787803496805, 0.030890201058339953], [41.453205740210095, -81.7859309538347, 0.02068811713505928], [41.453205740210095, -81.78398387270133, 0.009610278890546782], [41.453205740210095, -81.7041535462335, 0.0046094312429985716], [41.453205740210095, -81.70220646510013, 0.009933289398699039], [41.453205740210095, -81.70025938396677, 0.01402277040949145], [41.453205740210095, -81.69831230283341, 0.016835440547857784], [41.453205740210095, -81.69636522170005, 0.018340984011451362], [41.453205740210095, -81.69441814056668, 0.018522780130607895], [41.453205740210095, -81.69247105943333, 0.017378802986928298], [41.453205740210095, -81.69052397829996, 0.014921732771058332], [41.453205740210095, -81.6885768971666, 0.01117826488780269], [41.453205740210095, -81.68662981603325, 0.006187702579632288], [41.453205740210095, -81.68468273489988, 0.0], [41.4517422033146, -81.78982511610141, 0.020197293358892317], [41.4517422033146, -81.78787803496805, 0.011380837338089958], [41.4517422033146, -81.7859309538347, 0.001643244810434414], [41.450278666419116, -81.78982511610141, 7.712904079622293e-05]],
+                {"blur": 15, "max": 0.9999999999999999, "maxZoom": 8, "minOpacity": 0.0, "radius": 25}
+            ).addTo(map_3acca48267b1463e9a0c622107452ea9);
+        
+</script>
